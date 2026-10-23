@@ -1,0 +1,254 @@
+[
+  {
+    "name": "home-about-collage",
+    "source": "home",
+    "x": 175,
+    "y": 255,
+    "src": "/images/home-about-collage.png",
+    "width": 661,
+    "height": 509
+  },
+  {
+    "name": "sector-impact",
+    "source": "home",
+    "x": 23,
+    "y": 774,
+    "src": "/images/sector-impact.png",
+    "width": 578,
+    "height": 218
+  },
+  {
+    "name": "sector-media",
+    "source": "home",
+    "x": 184,
+    "y": 774,
+    "src": "/images/sector-media.png",
+    "width": 574,
+    "height": 218
+  },
+  {
+    "name": "sector-corporate",
+    "source": "home",
+    "x": 23,
+    "y": 869,
+    "src": "/images/sector-corporate.png",
+    "width": 578,
+    "height": 222
+  },
+  {
+    "name": "sector-culture",
+    "source": "home",
+    "x": 184,
+    "y": 869,
+    "src": "/images/sector-culture.png",
+    "width": 574,
+    "height": 222
+  },
+  {
+    "name": "home-founder",
+    "source": "home",
+    "x": 26,
+    "y": 1386,
+    "src": "/images/home-founder.png",
+    "width": 464,
+    "height": 722
+  },
+  {
+    "name": "testimonial-portrait-1",
+    "source": "home",
+    "x": 171.1,
+    "y": 1677.7,
+    "src": "/images/testimonial-portrait-1.png",
+    "width": 103,
+    "height": 103
+  },
+  {
+    "name": "testimonial-portrait-2",
+    "source": "home",
+    "x": 279.7,
+    "y": 1682.8,
+    "src": "/images/testimonial-portrait-2.png",
+    "width": 76,
+    "height": 76
+  },
+  {
+    "name": "testimonial-portrait-3",
+    "source": "home",
+    "x": 73.2,
+    "y": 1684.5,
+    "src": "/images/testimonial-portrait-3.png",
+    "width": 76,
+    "height": 76
+  },
+  {
+    "name": "story-hero",
+    "source": "about",
+    "x": 239,
+    "y": 49,
+    "src": "/images/story-hero.png",
+    "width": 621,
+    "height": 701
+  },
+  {
+    "name": "story-origin-collage",
+    "source": "about",
+    "x": 28,
+    "y": 326,
+    "src": "/images/story-origin-collage.png",
+    "width": 656,
+    "height": 578
+  },
+  {
+    "name": "work-event-amplification",
+    "source": "about",
+    "x": 28,
+    "y": 1270,
+    "src": "/images/work-event-amplification.png",
+    "width": 400,
+    "height": 340
+  },
+  {
+    "name": "work-media-relations",
+    "source": "about",
+    "x": 168,
+    "y": 1242,
+    "src": "/images/work-media-relations.png",
+    "width": 242,
+    "height": 423
+  },
+  {
+    "name": "work-brand-strategy",
+    "source": "about",
+    "x": 254,
+    "y": 1290,
+    "src": "/images/work-brand-strategy.png",
+    "width": 280,
+    "height": 280
+  },
+  {
+    "name": "work-content-production",
+    "source": "about",
+    "x": 353,
+    "y": 1317,
+    "src": "/images/work-content-production.png",
+    "width": 200,
+    "height": 200
+  },
+  {
+    "name": "work-pr",
+    "source": "about",
+    "x": 426,
+    "y": 1270,
+    "src": "/images/work-pr.png",
+    "width": 119,
+    "height": 340
+  },
+  {
+    "name": "story-contact-event",
+    "source": "about",
+    "x": 255,
+    "y": 1608,
+    "src": "/images/story-contact-event.png",
+    "width": 561,
+    "height": 522
+  },
+  {
+    "name": "founder-hero",
+    "source": "founder",
+    "x": 243,
+    "y": 50,
+    "src": "/images/founder-hero.png",
+    "width": 544,
+    "height": 758
+  },
+  {
+    "name": "founder-portrait",
+    "source": "founder",
+    "x": 31,
+    "y": 364,
+    "src": "/images/founder-portrait.png",
+    "width": 440,
+    "height": 683
+  },
+  {
+    "name": "about-brand-sign",
+    "source": "home",
+    "x": 176,
+    "y": 267,
+    "src": "/images/about-brand-sign.png",
+    "width": 324,
+    "height": 353
+  },
+  {
+    "name": "about-event-notebook",
+    "source": "home",
+    "x": 257,
+    "y": 299,
+    "src": "/images/about-event-notebook.png",
+    "width": 320,
+    "height": 320
+  },
+  {
+    "name": "story-strategy-meeting",
+    "source": "about",
+    "x": 28,
+    "y": 326,
+    "src": "/images/story-strategy-meeting.png",
+    "width": 558,
+    "height": 578
+  },
+  {
+    "name": "story-production-detail",
+    "source": "about",
+    "x": 162,
+    "y": 408,
+    "src": "/images/story-production-detail.png",
+    "width": 254,
+    "height": 194
+  },
+  {
+    "name": "team-reference-founder",
+    "source": "about",
+    "x": 28,
+    "y": 683,
+    "src": "/images/team-reference-founder.png",
+    "width": 382,
+    "height": 707
+  },
+  {
+    "name": "team-reference-gbotemi",
+    "source": "about",
+    "x": 175,
+    "y": 692,
+    "src": "/images/team-reference-gbotemi.png",
+    "width": 385,
+    "height": 268
+  },
+  {
+    "name": "team-reference-oluwatosin",
+    "source": "about",
+    "x": 330,
+    "y": 692,
+    "src": "/images/team-reference-oluwatosin.png",
+    "width": 382,
+    "height": 268
+  },
+  {
+    "name": "team-reference-damian",
+    "source": "about",
+    "x": 175,
+    "y": 833,
+    "src": "/images/team-reference-damian.png",
+    "width": 385,
+    "height": 268
+  },
+  {
+    "name": "team-reference-perfect",
+    "source": "about",
+    "x": 330,
+    "y": 833,
+    "src": "/images/team-reference-perfect.png",
+    "width": 382,
+    "height": 268
+  }
+]
