@@ -198,3 +198,40 @@ body .pill.outline-light:active { background:#FFC107;color:#073f30;transform:tra
 .about-film-label > span { width: 6px; height: 6px; border-radius: 50%; background: #ffc107; }
 .about-film-caption { font-family: var(--font-yellowtail), cursive; font-size: 23px; }
 @media (max-width: 760px) { .about-film-wrap { max-width: 560px; justify-self: center; } .about-film { border-radius: 19px; padding: 7px; } .about-film-player { border-radius: 13px; } .about-film figcaption { padding: 15px 10px 10px; } }
+/* Keep shared controls usable on narrow phones and compact tablets. */
+@media (max-width: 960px) {
+  .site-header > .logo, .site-header > .mobile-menu { flex-shrink: 0; }
+  .site-header .mobile-menu { width: 44px; height: 44px; display: grid; place-items: center; }
+}
+@media (max-width: 380px) {
+  .site-header { left: 12px; right: 12px; padding-inline: 12px; gap: 6px; }
+  .site-header .logo { font-size: 34px; }
+  .site-header .nav-contact { padding: 10px 12px; font-size: 11px; gap: 5px; }
+  .site-header .mobile-menu { width: 40px; }
+}
+/* Scroll entrances must not widen the document before they enter view. */
+main { overflow-x: clip; }
+.faq-answers { min-width: 0; }
+.faq-topic-section h2 { overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .faq-page .faq-topic-section { scroll-margin-top: 190px; }
+  .unified-contact input { font-size: 16px; }
+}
+.site-header .mobile-nav-contact { display: none; }
+@media (max-width: 960px) {
+  .site-header > .nav-contact { display: none; }
+  .site-header > .mobile-menu { margin-left: auto; }
+  .site-header .nav > .mobile-nav-contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 14px;
+    padding: 14px 18px;
+    border-radius: 999px;
+    background: #073f30;
+    color: #fffbed;
+    font-size: 15px;
+  }
+  .site-header .nav > .mobile-nav-contact:is(:hover, :focus-visible, :active) { background: #155b44; color: #ffc107; border-radius: 999px; }
+}

@@ -105,7 +105,7 @@
 .founder-signoff strong { font-size:16px;display:block;margin-bottom:8px; }
 .founder-signoff span { color:#91a08d;font-size:12px; }
 /* No transformed or clipped ancestor: the FAQ sidebar sticks through the entire answer list. */
-.faq-page { overflow:visible; }
+.faq-page { overflow-x:clip; overflow-y:visible; }
 .faq-container { width:calc(100% - 160px);max-width:1280px;margin-inline:auto; }
 .faq-hero { background:var(--page-green);color:#fffbed;padding:180px 0 65px; }
 .faq-hero .tiny-label { color:#FFC107;letter-spacing:2px; }

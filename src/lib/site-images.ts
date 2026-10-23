@@ -11,8 +11,9 @@ export function getSourceImage(source: "home" | "about" | "founder", x: number, 
 // Leave a value null to keep the requested placeholder. Set it to /images/your-photo.jpg later.
 export const teamPortraits: Record<string, string | null> = {
   Eniola: "/images/founder-portrait.png",
-  Gbotemi: null,
+  Gbotemi: "/images/team/gbotemi.jpg",
   Oluwatosin: "/images/team/tosin.png",
   Damian: null,
   Perfect: null,
 };
+
