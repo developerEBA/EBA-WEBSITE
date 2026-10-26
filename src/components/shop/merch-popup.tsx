@@ -29,7 +29,7 @@ export default function MerchPopup() {
       views.current += 1;
       try { sessionStorage.setItem(storageKey, String(views.current)); } catch {}
       setOpen(true);
-    }, views.current === 0 ? 5000 : 30000);
+    }, views.current === 0 ? 0 : 30000);
     return () => window.clearTimeout(timer);
   }, [excluded, open]);
 
@@ -49,7 +49,7 @@ export default function MerchPopup() {
             Wear the culture. Explore EBA clothing, cups and accessories in our company shop.
           </Dialog.Description>
           <Dialog.Close className="merch-popup-close" aria-label="Exit merchandise popup">
-            <X size={18} aria-hidden="true" /><span>Exit</span>
+            <X size={18} aria-hidden="true" />
           </Dialog.Close>
           <Link href="/shop" onClick={explore} className="merch-popup-art" aria-label="Shop now — explore the EBA company shop">
             <Image src="/images/shop/merch-popup.png" alt="Get your EBA merch. EBA hoodies, T-shirts, caps, bags, cups and accessories. Shop now." width={1536} height={1024} sizes="(max-width: 800px) 86vw, 720px" />
