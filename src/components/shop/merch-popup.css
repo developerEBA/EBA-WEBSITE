@@ -1,0 +1,7 @@
+.merch-popup-overlay{position:fixed;inset:0;z-index:300;background:transparent}
+.merch-popup{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:301;width:min(720px,86vw,114dvh);border-radius:12px;background:transparent;box-shadow:0 12px 40px #0003;outline:none}
+.merch-popup-art{display:block;border-radius:12px;overflow:hidden}
+.merch-popup-art img{display:block;width:100%;height:auto}
+.merch-popup-close{position:absolute;top:10px;right:10px;z-index:1;display:flex;align-items:center;gap:5px;padding:8px 12px;border:1px solid #0002;border-radius:999px;background:#fff;color:#222;font:inherit;font-size:13px;cursor:pointer;box-shadow:0 2px 12px #0003}
+.merch-popup a:focus-visible,.merch-popup button:focus-visible{outline:3px solid #fde342;outline-offset:3px}
+@media(max-width:520px){.merch-popup-close{top:6px;right:6px;padding:6px 9px}}
