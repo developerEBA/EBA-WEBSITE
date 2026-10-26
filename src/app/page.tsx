@@ -1,3 +1,4 @@
+import { ShopInvitation } from "@/components/shop/shop-invitation";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ActionLink } from "@/components/shared/action-link";
 import Link from "next/link";
@@ -22,7 +23,7 @@ export default function Home() {
     <section className="sectors section-shell" id="sectors"><div className="section-intro"><SectorHeading/><div><p>From institutions shaping progress to creatives shaping culture, we build communications around the world your brand lives in.</p></div></div><div className="sector-panel"><span className="tiny-label">SECTOR COLLECTION</span><div className="sector-title"><h3>Four sectors, one editorial approach.</h3><span className="sector-badge">4 SECTORS</span></div><p>Stories that connect purpose, business and culture with the audiences that matter.</p><div className="sector-grid">{sectors.map((s, index) => <SectorCard key={s.title} index={index}><div><h4>{s.title}</h4><Link href={`/about/sectors/${s.slug}`} aria-label={`Explore ${s.title}`}>EXPLORE <ArrowUpRight size={11}/></Link></div><p>{s.text}</p><ReferenceImage {...s} label={s.title}/></SectorCard>)}</div></div></section>
     <PortfolioMap/>
     <Reveal className="approach section-shell" ><div className="section-intro" id="approach"><div><SectionHeading eyebrow="How we do" eyebrowClassName="eyebrow">Clarity first. Then<br/>momentum.</SectionHeading></div><ActionLink href="/get-in-touch" variant="yellow" arrowSize={15}>Let’s find your direction</ActionLink></div><div className="approach-grid">{[["DISCOVER", "Find.", "We get close to your brand, your challenge and your audience. Before we make noise, we ask the right questions.", "INSIGHT. CLARITY. CONTEXT."], ["DESIGN", "Create.", "We turn insight into a clear strategy, distinctive ideas and communications with a reason to exist.", "STRATEGY. STORY. COMMUNICATION."], ["DELIVER", "Execute.", "We bring the plan to life across channels, platforms and experiences — keeping every moving part aligned.", "CAMPAIGNS. CONTENT. EXPERIENCES."]].map(([label, title, text, end], i) => <Entrance as="article" key={title} delay={i * 0.18} tilt={i === 1 ? -3 : 3}><div className="step-label">0{i + 1} / {label}<ArrowRight size={16}/></div><h3>{title}</h3><p>{text}</p><span>{end}</span></Entrance>)}</div></Reveal>
-    <HomeFounder/>
+    <HomeFounder/><ShopInvitation/>
   </main>;
 }
 

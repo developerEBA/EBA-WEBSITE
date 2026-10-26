@@ -12,8 +12,10 @@ export function getSourceImage(source: "home" | "about" | "founder", x: number, 
 export const teamPortraits: Record<string, string | null> = {
   Eniola: "/images/founder-portrait.png",
   Gbotemi: "/images/team/gbotemi.jpg",
-  Oluwatosin: "/images/team/tosin.png",
-  Damian: null,
-  Perfect: null,
+  Oluwatosin: null,
+  Damian: "/images/team/damian.png",
+  Perfect: "/images/team/perfect.png",
+  Zainab: null,
+  Skeng: null,
 };
 

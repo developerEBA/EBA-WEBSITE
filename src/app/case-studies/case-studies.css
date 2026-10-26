@@ -8,3 +8,37 @@
 @media(max-width:760px){.case-index .case-hero{padding-top:110px}.case-index .case-hero-inner{grid-template-columns:1fr;gap:40px}.case-index .case-hero h1{font-size:clamp(58px,12vw,82px);max-width:600px}.case-index .case-hero h1 em{display:inline}.case-hero-art{padding:0 0 55px 25px;max-width:540px;width:100%;justify-self:center}.case-index .case-hero-photo{aspect-ratio:1.05;border-top-left-radius:85px}.case-hero-inset{left:0;bottom:10px;width:43%;border-width:5px}.case-hero-note{font-size:27px;right:10px}.case-hero-bottom{margin-top:0;padding:18px 0;gap:20px}.case-hero-bottom>span{font-size:8px;max-width:230px;line-height:1.8}.case-index .case-collection{padding-top:55px}.case-collection-heading{align-items:start;flex-direction:column;gap:12px}.case-collection-heading>p{margin-bottom:0}.case-index .case-filters{padding-top:25px;gap:8px}.case-index .case-filters button{font-size:10px;padding:9px 12px}.case-index .case-feature{padding:25px 0 35px}.case-index .case-feature-inner,.case-index .case-feature-the-eniivy-experience .case-feature-inner{grid-template-columns:1fr}.case-index .case-feature .case-feature-photo{grid-column:1;grid-row:1;min-height:0;aspect-ratio:1.1;border-radius:4px 4px 0 0}.case-index .case-feature .case-feature-copy{grid-column:1;grid-row:2;margin:-18px 14px 0;padding:27px;border-radius:4px;max-width:none}.case-project-index{top:16px;left:16px}.case-project-open{bottom:34px;left:auto;right:16px;width:42px;height:42px}.case-index .case-feature-copy h2{font-size:32px}.case-perspective{padding:55px 0}.case-perspective h2{font-size:35px;margin-bottom:35px}.case-principles{grid-template-columns:1fr;gap:28px}.case-principles>div{display:grid;grid-template-columns:28px 1fr;gap:0 12px}.case-principles>div>span{padding-top:7px}.case-principles h3{margin:0 0 8px}.case-principles p{grid-column:2;max-width:none}.case-index .case-reputation{grid-template-columns:1fr;padding-block:55px;gap:35px}.case-index .case-reputation-photo{aspect-ratio:1.15}.case-index .case-reputation h2{font-size:45px}.case-closing{padding:40px 0}.case-closing-inner{align-items:start;flex-direction:column;gap:27px}}
 @media(prefers-reduced-motion:reduce){.case-page img,.case-project-open{transition:none}}
 .case-index .case-hero { padding-bottom: 55px; }
+.case-focus{display:inline-block;font-size:clamp(20px,2.4vw,32px);font-weight:700;letter-spacing:.04em;line-height:1.15;color:#073f30;border-bottom:3px solid #ffc107;padding-bottom:10px}
+.case-index .case-feature-brand .case-feature-photo,.case-brand-visual{background:#edece5}
+.case-index .case-feature-brand .case-feature-photo img,.case-brand-visual img{object-fit:contain;padding:clamp(25px,5vw,70px)}
+.case-image-credit{font-size:11px!important;color:#52665b;margin-bottom:25px}
+.case-project-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px;padding-block:30px 80px}
+.case-project-card{min-width:0;background:#fffdf7;border:1px solid #073f3020;border-radius:16px;overflow:hidden;transition:box-shadow .25s,border-color .25s}
+.case-project-card:hover{border-color:#073f3050;box-shadow:0 15px 45px #073f3010}
+.case-project-card>article{height:100%;display:flex;flex-direction:column}
+.case-card-visual{position:relative;display:block;aspect-ratio:1.65;background:#e8e9df;overflow:hidden;isolation:isolate}
+.case-card-visual img{transition:transform .65s;object-position:center}
+.case-project-card:hover .case-card-visual img{transform:scale(1.035)}
+.case-project-brand .case-card-visual{background:radial-gradient(ellipse at center,#fffdf7,#e7e7da)}
+.case-project-brand .case-card-visual img{padding:70px 50px}
+.case-card-number{position:absolute;top:19px;left:19px;background:#fffdf7ec;border:1px solid #073f3015;padding:8px 11px;border-radius:30px;font-size:8px;letter-spacing:.1em;color:#073f30}
+.case-card-arrow{position:absolute;right:18px;bottom:18px;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;background:#ffdf3e;color:#073f30;transition:transform .25s}
+.case-project-card:hover .case-card-arrow{transform:rotate(45deg)}
+.case-card-body{padding:30px 32px;display:flex;flex-direction:column;flex:1;align-items:flex-start}
+.case-card-category{display:flex;align-items:center;gap:8px;font-size:10px;letter-spacing:.12em;font-weight:600}
+.case-card-category>span{width:6px;height:6px;background:#ceab00;border-radius:50%}
+.case-page .case-card-body h3{font-size:clamp(29px,3vw,42px);line-height:1.1;letter-spacing:-.04em;margin:16px 0}
+.case-card-body .case-card-line{font-size:17px;line-height:1.6;margin:0 0 14px;color:#244f3e}
+.case-card-body .case-card-description{font-size:12px;line-height:1.85;color:#617066;margin:0 0 25px}
+.case-card-link{display:inline-flex;align-items:center;justify-content:space-between;width:100%;gap:20px;border-top:1px solid #073f3020;padding-top:19px;margin-top:auto;font-size:11px;font-weight:500}
+.case-project-featured,.case-project-card:only-child{grid-column:1/-1}
+.case-project-featured>article{display:grid;grid-template-columns:1.2fr 1fr}
+.case-project-featured .case-card-visual{aspect-ratio:auto;min-height:370px}
+.case-project-featured .case-card-body{background:#073f30;color:#fffbed;padding:42px}
+.case-project-featured .case-card-category{color:#ffdf3e}
+.case-project-featured .case-card-category>span{background:#ffdf3e}
+.case-project-featured .case-card-line{color:#edf2e5}
+.case-project-featured .case-card-description{color:#c7d6c9}
+.case-project-featured .case-card-link{border-color:#fffbed30;color:#ffdf3e}
+@media(max-width:760px){.case-project-grid{grid-template-columns:1fr;gap:25px;padding-block:25px 50px}.case-project-featured>article{display:flex}.case-project-featured .case-card-visual{min-height:0;aspect-ratio:1.5}.case-card-body,.case-project-featured .case-card-body{padding:26px}.case-page .case-card-body h3{font-size:33px}.case-project-brand .case-card-visual img{padding:65px 35px}.case-card-visual{aspect-ratio:1.4}.case-card-number{top:15px;left:15px;font-size:7px}.case-card-body .case-card-line{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.case-project-card,.case-card-visual img,.case-card-arrow{transition:none}.case-project-card:hover .case-card-visual img,.case-project-card:hover .case-card-arrow{transform:none}}

@@ -1,0 +1,126 @@
+/* Three content experiences within the EBA Journal. */
+.journal-three-experiences .journal-opening-heading h1{font-size:clamp(56px,7.1vw,98px);line-height:1.02;letter-spacing:-.055em}
+.journal-opening-heading h1 em{font-weight:400}
+.journal-three-experiences .journal-opening-heading{margin-bottom:38px}
+.journal-type-navigation{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px;margin:28px 0 30px}
+.journal-type-navigation>a{display:block;border:1px solid #063c2d30;border-radius:12px;padding:24px;background:#fffdf566;transition:background .2s,transform .2s}
+.journal-type-navigation>a:hover{background:#fffdf5;transform:translateY(-2px)}
+.journal-type-navigation>a[aria-current=page]{background:#063c2d;color:#fffbed}
+.journal-type-navigation>a>div{display:flex;align-items:center;justify-content:space-between;font-size:10px;opacity:.8;margin-bottom:24px}
+.journal-type-navigation h2{font-family:var(--font-playfair),serif;font-size:clamp(22px,2.2vw,29px);font-weight:500;letter-spacing:-.025em;line-height:1.2}
+.journal-type-navigation h2>svg{display:inline;vertical-align:middle;margin-left:5px}
+.journal-type-navigation p{font-size:11px;line-height:1.8;margin-top:13px;max-width:38ch;opacity:.8}
+.journal-type-badge{display:inline-flex;align-items:center;gap:5px;border-radius:4px;padding:5px 8px;font-size:8px!important;font-family:var(--font-dm-sans),sans-serif;font-weight:600;letter-spacing:.09em;line-height:1.4;white-space:nowrap}
+.type-press-release{background:#e2e8de;color:#063c2d;border:1px solid #063c2d25}
+.type-article{background:#f6e9b9;color:#554408;border:1px solid #55440815}
+.type-series{background:#063c2d;color:#fffbed;border:1px solid #063c2d}
+.journal-lead-label{display:flex;align-items:center;flex-wrap:wrap;gap:15px;font-size:10px;opacity:.9}
+.journal-lead-label .type-press-release{background:#f8f5e7;color:#063c2d}
+.journal-channel-link{display:inline-flex;align-items:center;gap:9px;font-size:12px;white-space:nowrap}
+.journal-press-section{padding-block:10px 70px}
+.journal-press-section .stories-picks-heading h2{font-size:clamp(32px,3.6vw,48px);font-family:var(--font-playfair),serif;line-height:1.1}
+.journal-release-list{border-top:2px solid #063c2d}
+.journal-release-list>article{display:grid;grid-template-columns:190px 1fr 35px;align-items:center;gap:30px;padding:28px 0;border-bottom:1px solid #063c2d25}
+.journal-release-list>article>div{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.journal-release-list time{font-size:10px;opacity:.7}
+.journal-release-list h3{font-family:var(--font-playfair),serif;font-size:clamp(22px,2.4vw,31px);line-height:1.25;letter-spacing:-.025em;font-weight:500;max-width:45ch}
+.journal-release-list h3 a:hover{text-decoration:underline;text-underline-offset:5px}
+.journal-series-feature{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center;background:#063c2d;color:#fffbed;border-radius:18px;padding:50px;margin-bottom:75px}
+.journal-series-feature-copy>.journal-eyebrow{color:#fde342}
+.journal-series-feature-copy>.type-series{border-color:#fffbed50;background:#fffbed0a}
+.journal-series-feature h2{font-family:var(--font-playfair),serif;font-size:clamp(37px,4.3vw,58px);line-height:1.12;letter-spacing:-.04em;margin:23px 0 20px;font-weight:500}
+.journal-series-feature-copy>p{font-size:14px;line-height:1.85;color:#d0dfd0;max-width:40ch}
+.journal-series-feature-copy>small{display:block;font-size:11px;color:#b7cdbb;margin-top:16px}
+.journal-series-feature-copy>.pill{margin-top:28px}
+.series-reading-motif{border:1px solid #fffbed35;min-height:325px;border-radius:120px 12px 12px 12px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:23px;padding:35px;background:#fffbed05}
+.series-reading-motif>svg{color:#fde342}
+.series-reading-motif>span{font-size:9px;letter-spacing:.16em}
+.series-reading-motif>div{display:flex;align-items:center;gap:18px}
+.series-reading-motif b{font-family:var(--font-playfair),serif;font-size:38px;font-weight:400}
+.series-reading-motif i{font-size:18px;font-style:normal;color:#fde342}
+.series-reading-motif>p{font-family:var(--font-yellowtail),cursive;font-size:27px;color:#fde342}
+.journal-series-filter{display:inline-flex;align-items:center;padding:10px 15px;font-size:12px;text-decoration:underline;text-underline-offset:4px}
+.journal-channel-opening{padding-top:145px}
+.journal-channel-opening>h1{font-family:var(--font-playfair),serif;font-size:clamp(48px,6vw,80px);font-weight:500;letter-spacing:-.05em;line-height:1.08;margin:15px 0 25px}
+.journal-channel-opening>p{font-size:15px;line-height:1.85;max-width:60ch}
+.journal-channel-opening .journal-type-navigation{margin-top:40px;margin-bottom:0}
+.journal-newsroom .journal-channel-opening{border-bottom:0}
+.journal-newsroom .journal-library{padding-top:50px}
+.journal-card-press-release .journal-card-copy{border-top:2px solid #063c2d;margin-top:14px;padding-top:16px}
+.journal-card-press-release .journal-image{border-radius:3px}
+.press-release-page{background:#fbfaf5}
+.press-release-page .journal-article-header{border-bottom:1px solid #063c2d30;padding-bottom:30px}
+.press-masthead{display:flex;align-items:center;justify-content:space-between;gap:25px;border-top:3px solid #063c2d;border-bottom:1px solid #063c2d40;padding:23px 0;margin-bottom:30px}
+.press-wordmark{font-size:47px;letter-spacing:-4px;font-weight:800;line-height:1}
+.press-wordmark>span{color:#d9b900}
+.press-masthead>div{text-align:right;display:grid;gap:7px}
+.press-masthead strong{font-size:12px;letter-spacing:.14em;font-weight:600}
+.press-masthead>div>span{font-size:10px;opacity:.7}
+.press-release-page .journal-article-header h1{max-width:30ch;font-size:clamp(37px,4.8vw,64px);margin-bottom:25px}
+.press-publication-line{display:flex;align-items:center;justify-content:space-between;gap:20px;font-size:11px;line-height:1.8}
+.press-release-page .journal-article-cover{margin-top:30px;border-radius:2px}
+.press-release-page .journal-reading-layout{max-width:800px}
+.press-release-page .journal-prose>p:first-child{font-size:19px}
+.press-contact{margin-top:40px;padding:24px 0;border-top:1px solid #063c2d30;border-bottom:1px solid #063c2d30}
+.press-contact p{font-size:13px;line-height:1.85}
+.press-contact .journal-eyebrow{font-size:9px}
+.series-library{padding-block:50px 80px}
+.series-library-heading h2{font-family:var(--font-playfair),serif;font-size:39px;font-weight:500;letter-spacing:-.035em;margin:18px 0 30px}
+.series-empty{text-align:center;background:#e9ecdf;border:1px solid #063c2d20;padding:60px 25px;border-radius:15px}
+.series-empty>svg{margin:0 auto 25px}
+.series-empty>h2{font-family:var(--font-playfair),serif;font-size:clamp(35px,4.5vw,57px);line-height:1.12;font-weight:500;letter-spacing:-.035em;margin-bottom:25px}
+.series-empty>p{font-size:14px;line-height:1.9;max-width:52ch;margin:0 auto 25px;color:#536a58}
+.series-reading-guide{max-width:800px;margin:50px auto 0;text-align:center}
+.series-reading-guide>div{display:flex;align-items:center;justify-content:center;gap:22px;flex-wrap:wrap;margin:25px 0}
+.series-reading-guide>div>span{font-family:var(--font-playfair),serif;font-size:25px}
+.series-reading-guide b{font-weight:400;color:#9b841a}
+.series-reading-guide>p{font-size:13px;line-height:1.9;max-width:65ch;margin:auto;color:#536a58}
+.journal-series-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.journal-series-cover{position:relative;display:grid;place-items:center;min-height:300px;aspect-ratio:1.4;background:#e5e9da;border-radius:13px;overflow:hidden;color:#063c2d}
+.journal-series-cover>img{object-fit:cover}
+.journal-series-cover>.type-series{position:absolute;top:18px;left:18px}
+.journal-series-card>div>.journal-eyebrow{margin-top:24px;font-size:9px}
+.journal-series-card h2{font-family:var(--font-playfair),serif;font-size:34px;font-weight:500;line-height:1.2}
+.journal-series-card>div>p{font-size:13px;line-height:1.9;margin-top:15px;max-width:55ch}
+.journal-series-card small{display:block;font-size:11px;margin-top:15px;opacity:.7}
+.journal-series-feature .journal-series-card h2{font-size:32px;margin-block:15px}
+.series-detail-opening{padding-top:145px}
+.series-detail-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:55px;align-items:center}
+.series-detail-grid:not(:has(.series-detail-cover)){grid-template-columns:1fr;max-width:900px}
+.series-detail-grid h1{font-family:var(--font-playfair),serif;font-size:clamp(43px,5.2vw,73px);font-weight:500;line-height:1.1;letter-spacing:-.04em;margin:25px 0}
+.series-detail-grid>div>p{font-size:16px;line-height:1.85;max-width:60ch}
+.series-facts{display:flex;flex-wrap:wrap;gap:12px 20px;font-size:11px;line-height:1.8;margin-top:25px}
+.series-detail-cover{position:relative;aspect-ratio:.9;border-radius:15px;overflow:hidden;background:#e3e8d9}
+.series-detail-cover>img{object-fit:cover}
+.series-start-actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 18px}
+body .series-continue{border-color:#063c2d;background:transparent;color:#063c2d}
+.series-detail-grid small{font-size:10px;line-height:1.8;opacity:.65}
+.series-episode-list{padding-block:60px 80px}
+.series-episode-list>h2{font-family:var(--font-playfair),serif;font-size:35px;font-weight:500;margin:15px 0 30px}
+.series-episode-list ol{list-style:none;padding:0;border-top:1px solid #063c2d30}
+.series-episode-list li{border-bottom:1px solid #063c2d30}
+.series-episode-list li>a{display:flex;gap:25px;align-items:center;padding:25px 0}
+.series-episode-number{font-family:var(--font-playfair),serif;font-size:38px;color:#67816b;min-width:50px}
+.series-episode-list h3{font-family:var(--font-playfair),serif;font-size:26px;line-height:1.3;font-weight:500}
+.series-episode-list li p{font-size:10px;opacity:.7;margin-top:8px}
+.series-episode-list li svg{margin-left:auto}
+.series-reader-shell{width:min(calc(100% - var(--page-gutter)*2),760px);margin:auto;padding-block:145px 70px}
+.series-reader-shell>header>h1{font-family:var(--font-playfair),serif;font-size:clamp(38px,5vw,62px);font-weight:500;line-height:1.13;letter-spacing:-.035em;margin:20px 0 25px}
+.series-episode-image{display:block;width:100%;height:auto;border-radius:10px;margin:35px 0}
+.series-episode-prose{margin-top:50px;font-size:19px;line-height:2;max-width:66ch}
+.series-episode-prose>p{margin-bottom:1.6em}
+.series-episode-prose>p:first-child{font-size:21px}
+.series-episode-end{margin-top:55px;padding:35px;border:1px solid #063c2d25;background:#e9eddf;border-radius:13px}
+.series-episode-end h2{font-family:var(--font-playfair),serif;font-size:35px;font-weight:500;line-height:1.2;margin:15px 0 25px}
+.series-episode-end p{font-size:12px;line-height:1.8;margin-top:18px}
+.series-episode-navigation{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:18px;border-top:1px solid #063c2d25;padding-top:25px;margin-top:35px;font-size:11px}
+.series-episode-navigation>span{opacity:.55}
+.series-reading-progress{position:fixed;top:0;left:0;right:0;z-index:110;pointer-events:none}
+.series-reading-progress>progress{display:block;width:100%;height:3px;border:0;appearance:none;background:transparent}
+.series-reading-progress>progress::-webkit-progress-bar{background:transparent}
+.series-reading-progress>progress::-webkit-progress-value{background:#d4b51e}
+.series-reading-progress>progress::-moz-progress-bar{background:#d4b51e}
+.series-reading-progress>span{position:absolute;right:15px;top:8px;font-size:9px;color:#063c2d;background:#fffdf0e8;padding:4px 9px;border-radius:20px}
+@media(max-width:850px){.journal-type-navigation{gap:12px}.journal-type-navigation>a{padding:20px}.journal-type-navigation h2{font-size:24px}.journal-type-navigation p{font-size:10px}.journal-release-list>article{grid-template-columns:140px 1fr 25px;gap:22px}.journal-series-feature{padding:35px;gap:30px}.series-reading-motif{min-height:290px;padding:22px}.series-detail-grid{gap:35px}.journal-channel-opening>h1{font-size:58px}}
+@media(max-width:700px){.journal-three-experiences .journal-opening-heading h1{font-size:clamp(55px,11vw,78px)}.journal-three-experiences .journal-opening-heading{gap:20px}.journal-type-navigation{grid-template-columns:1fr}.journal-type-navigation>a{padding:20px}.journal-type-navigation>a>div{margin-bottom:14px}.journal-type-navigation h2{font-size:27px}.journal-type-navigation p{font-size:12px;max-width:60ch;margin-top:10px}.journal-type-navigation>a>div>span{font-size:10px}.journal-three-experiences .stories-picks-heading{display:flex;align-items:flex-start;flex-direction:column;gap:20px}.journal-release-list>article{grid-template-columns:1fr 25px;gap:15px;padding:25px 0}.journal-release-list>article>div{grid-column:1/-1;flex-direction:row;align-items:center;gap:15px}.journal-release-list h3{font-size:27px}.journal-series-feature{grid-template-columns:1fr;padding:28px;gap:30px;margin-bottom:45px}.journal-series-feature h2{font-size:42px}.series-reading-motif{min-height:250px;border-top-left-radius:80px}.journal-press-section{padding-bottom:40px}.journal-channel-opening,.series-detail-opening{padding-top:120px}.journal-channel-opening>h1{font-size:clamp(40px,9vw,59px)}.journal-channel-opening>p{font-size:14px}.journal-channel-opening .journal-type-navigation{margin-top:30px}.press-masthead{padding-block:20px;gap:15px}.press-masthead>div>span{font-size:9px;max-width:24ch}.press-masthead strong{font-size:10px}.press-publication-line{align-items:flex-start;flex-direction:column}.press-release-page .journal-article-header h1{font-size:37px}.press-release-page .journal-reading-layout{width:calc(100% - 40px)}.series-library{padding-block:35px 55px}.journal-series-grid{grid-template-columns:1fr}.series-detail-grid{grid-template-columns:1fr;gap:30px}.series-detail-grid h1{font-size:46px}.series-detail-cover{aspect-ratio:1.2;max-width:600px;width:100%}.series-reader-shell{padding-top:120px}.series-episode-prose{font-size:17px;line-height:1.95}.series-episode-prose>p:first-child{font-size:19px}.series-episode-end{padding:25px}.series-episode-end h2{font-size:31px}.series-episode-list li>a{gap:15px}.series-episode-list h3{font-size:23px}.series-episode-number{font-size:32px;min-width:40px}}
+@media(prefers-reduced-motion:reduce){.journal-type-navigation>a{transition:none}.journal-type-navigation>a:hover{transform:none}}

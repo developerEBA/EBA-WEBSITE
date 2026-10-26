@@ -1,0 +1,7 @@
+.home-shop-invitation{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-block:75px}
+.home-shop-photo{position:relative;min-height:370px;border-radius:14px;overflow:hidden;background:#e8ddc7}
+.home-shop-photo>img{object-fit:cover}
+.home-shop-copy>span{font-size:10px;font-weight:500;letter-spacing:.14em;color:#52695b}
+.home-shop-copy h2{font-family:var(--font-playfair),serif;font-size:clamp(33px,4vw,55px);line-height:1.14;font-weight:500;letter-spacing:-.04em;color:#063c2d;margin:19px 0}
+.home-shop-copy p{font-size:14px;line-height:1.85;color:#52695b;max-width:40ch;margin-bottom:25px}
+@media(max-width:700px){.home-shop-invitation{grid-template-columns:1fr;gap:27px;margin-block:50px}.home-shop-photo{min-height:300px}}

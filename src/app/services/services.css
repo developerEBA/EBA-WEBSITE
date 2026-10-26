@@ -104,3 +104,10 @@
 .hero-content-and-creative{--hero-glow-x:0%;--hero-glow-y:0%;--hero-shade-x:85%;--hero-shade-y:85%;--hero-angle:210deg;--hero-warmth:23%}
 .hero-experiences-and-activations{--hero-glow-x:80%;--hero-glow-y:70%;--hero-shade-x:0%;--hero-shade-y:15%;--hero-angle:55deg;--hero-green-strength:14%}
 .hero-research-and-insights{--hero-glow-x:15%;--hero-glow-y:50%;--hero-shade-x:100%;--hero-shade-y:50%;--hero-angle:100deg;--hero-warmth:14%;--hero-green-strength:17%}
+.service-detail-hero.service-film-hero{position:relative;isolation:isolate;overflow:hidden;background:#073f30;color:#fffbed;min-height:640px}
+.service-film-shade{position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,#032d25eb 0%,#032d25ba 48%,#032d2530 100%),linear-gradient(0deg,#032d2570,transparent)}
+.service-film-hero>.services-shell{position:relative;z-index:1}
+.service-film-hero .services-eyebrow{color:#ffdf3e}
+.service-film-hero .video-control{color:#fffbed;z-index:3}
+.service-film-hero .service-back:focus-visible{outline:2px solid #ffdf3e;outline-offset:5px}
+@media(max-width:760px){.service-detail-hero.service-film-hero{min-height:600px;padding-bottom:85px}.service-film-shade{background:linear-gradient(90deg,#032d25de,#032d2580),linear-gradient(0deg,#032d2580,transparent)}}

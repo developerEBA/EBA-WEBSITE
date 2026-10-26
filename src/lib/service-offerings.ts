@@ -2,6 +2,14 @@ import { serviceDetails } from "@/lib/services";
 
 // One source for navigation, the six overview nodes and dedicated service pages.
 export const allServiceOfferings = [...serviceDetails, {
+  slug: "b2b",
+  title: "B2B Solutions",
+  line: "Build credibility. Connect with the right businesses.",
+  intro: "Connect your business with the organisations, partners and decision-makers that matter.",
+  description: "We bring strategy, communications and marketing together to help businesses explain their value, build trust and develop relevant business relationships.",
+  items: [["Business positioning & messaging", "Clarify your offer and communicate its value to business audiences."], ["B2B marketing & communications", "Plan campaigns, thought leadership and content around your audience and business objectives."], ["Partnerships & business engagement", "Shape communications and experiences that support conversations with partners and industry stakeholders."]],
+  outcome: "A clear business narrative and a coordinated direction for reaching relevant organisations and decision-makers.",
+}, {
   slug: "social-media-and-community",
   title: "Social Media & Community",
   line: "Build a presence people want to come back to.",
@@ -23,3 +31,4 @@ export const allServiceOfferings = [...serviceDetails, {
 
 const primaryOrder = ["brand-and-reputation", "pr-and-strategic-communications", "marketing-and-amplification", "social-media-and-community", "content-and-creative", "experiences-and-activations"];
 export const serviceOfferings = primaryOrder.map(slug => allServiceOfferings.find(service => service.slug === slug)!);
+export const navigationServiceOfferings = [...serviceOfferings, allServiceOfferings.find(service => service.slug === "b2b")!];
