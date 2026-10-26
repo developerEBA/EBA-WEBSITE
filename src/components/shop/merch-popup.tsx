@@ -40,9 +40,10 @@ export default function MerchPopup() {
   }
 
   return (
-    <Dialog.Root open={open && !excluded} onOpenChange={setOpen}>
+    // A non-modal promotion keeps the website accessible and avoids Radix
+    // adding aria-hidden to page sections that are still hydrating.
+    <Dialog.Root modal={false} open={open && !excluded} onOpenChange={setOpen}>
       <Dialog.Portal>
-        <Dialog.Overlay className="merch-popup-overlay" />
         <Dialog.Content className="merch-popup" aria-describedby="merch-popup-description">
           <Dialog.Title className="sr-only">Get your EBA merch</Dialog.Title>
           <Dialog.Description id="merch-popup-description" className="sr-only">
