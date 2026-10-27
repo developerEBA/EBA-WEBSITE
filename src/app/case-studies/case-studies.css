@@ -42,3 +42,32 @@
 .case-project-featured .case-card-link{border-color:#fffbed30;color:#ffdf3e}
 @media(max-width:760px){.case-project-grid{grid-template-columns:1fr;gap:25px;padding-block:25px 50px}.case-project-featured>article{display:flex}.case-project-featured .case-card-visual{min-height:0;aspect-ratio:1.5}.case-card-body,.case-project-featured .case-card-body{padding:26px}.case-page .case-card-body h3{font-size:33px}.case-project-brand .case-card-visual img{padding:65px 35px}.case-card-visual{aspect-ratio:1.4}.case-card-number{top:15px;left:15px;font-size:7px}.case-card-body .case-card-line{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.case-project-card,.case-card-visual img,.case-card-arrow{transition:none}.case-project-card:hover .case-card-visual img,.case-project-card:hover .case-card-arrow{transform:none}}
+.client-portfolio{padding-block:70px 80px;border-top:1px solid #073f3025;scroll-margin-top:110px}
+.client-portfolio-heading{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:35px}
+.case-page .client-portfolio-heading h2{font-size:clamp(35px,4.2vw,58px);line-height:1.12;margin-bottom:0}
+.client-portfolio-heading>p{max-width:38ch;font-size:13px;line-height:1.85;color:#52665b}
+.portfolio-filters{display:flex;gap:9px;flex-wrap:wrap;padding-block:20px;border-block:1px solid #073f3025}
+.portfolio-filters>button{border:1px solid #073f3025;background:transparent;color:#073f30;border-radius:30px;padding:10px 17px;font:inherit;font-size:11px;cursor:pointer}
+.portfolio-filters>button[aria-pressed=true]{background:#073f30;color:#ffdf3e;border-color:#073f30}
+.portfolio-filters>button:focus-visible{outline:3px solid #ffdf3e;outline-offset:3px}
+.portfolio-result-count{font-size:10px;color:#52665b;margin:18px 0}
+.client-logo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
+.client-logo-tile{min-width:0;border:1px solid #073f3020;border-radius:8px;background:#fffdf7;overflow:hidden;display:flex;flex-direction:column}
+.client-logo-art{position:relative;height:135px;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
+.client-logo-art>img:not(.client-portrait){padding:25px}
+.client-name-display{font-size:20px;font-weight:600;line-height:1.25;letter-spacing:-.03em;color:#073f30;overflow-wrap:anywhere}
+.client-logo-caption{padding:14px 17px;border-top:1px solid #073f3010;margin-top:auto}
+.case-page .client-logo-caption h3{font-family:var(--font-dm-sans),sans-serif;font-size:11px;line-height:1.5;letter-spacing:0;margin:0;font-weight:500}
+.client-logo-caption>span{font-size:8px;text-transform:uppercase;letter-spacing:.1em;opacity:.65}
+.client-logo-dark .client-logo-art{background:#073f30}
+.client-person-tile .client-logo-art{background:#eef0e5}
+.client-portrait{border-radius:50%;width:78px;height:78px;object-fit:cover;object-position:center 25%}
+.personal-brand-invitation{margin-top:35px;background:#eeeedd;border-radius:8px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:35px}
+.case-page .personal-brand-invitation h3{font-size:36px;line-height:1.15;margin:14px 0}
+.personal-brand-invitation p{font-size:13px;line-height:1.85;max-width:62ch;color:#52665b}
+.personal-brand-invitation>.pill{flex-shrink:0;font-size:12px}
+@media(max-width:900px){.client-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.personal-brand-invitation{align-items:start;flex-direction:column}}
+@media(max-width:600px){.client-portfolio{padding-block:45px 55px}.client-portfolio-heading{flex-direction:column;align-items:start;gap:20px}.client-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.client-logo-art{height:115px;padding:16px}.client-logo-art>img:not(.client-portrait){padding:18px}.client-name-display{font-size:18px}.client-logo-caption{padding:12px}.portfolio-filters>button{font-size:10px;padding:9px 12px}.personal-brand-invitation{padding:25px}.case-page .personal-brand-invitation h3{font-size:31px}}
+.case-index .case-hero-brand-art{background:radial-gradient(ellipse at 40% 35%,#fffdf7,#e0e4d5)}
+
+

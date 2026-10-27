@@ -1,0 +1,36 @@
+export const portfolioCategories = ["All", "Companies", "Events", "Foundations", "Personal Brands", "Podcasts"] as const;
+export type PortfolioCategory = Exclude<typeof portfolioCategories[number], "All">;
+export type PortfolioClient = { name: string; category: PortfolioCategory; logo?: string; dark?: boolean; portrait?: string };
+// Relationships and names supplied by EBA. A name is shown when no verified logo is available.
+export const portfolioClients: PortfolioClient[] = [
+  { name: "Afriex", category: "Companies", logo: "/images/clients/afriex.svg" },
+  { name: "Dinku Transnational", category: "Companies", logo: "/images/clients/dinku.png", dark: true },
+  { name: "Hostessng", category: "Companies", logo: "/images/clients/hostessng.png" },
+  { name: "Official Loud Urban Choir", category: "Companies", logo: "/images/clients/loud.png", dark: true },
+  { name: "Popcentral Television", category: "Companies" },
+  { name: "Wedding TV Channel", category: "Companies" },
+  { name: "Play Central", category: "Companies" },
+  { name: "Hoardings Africa", category: "Companies", logo: "/images/clients/hoardings.svg" },
+  { name: "Maison86", category: "Companies" },
+  { name: "Kitchen 86", category: "Companies", logo: "/images/clients/kitchen86.jpg", dark: true },
+  { name: "mediaReach OMD", category: "Companies", logo: "/images/case-studies/mediareach.png" },
+  { name: "Lounge Network", category: "Companies" },
+  { name: "Ojavendor", category: "Companies" },
+  { name: "Signal", category: "Companies" },
+  { name: "Play With Stephen (PWS)", category: "Companies", logo: "/images/clients/pws.png" },
+  { name: "MacMannie Group", category: "Companies", logo: "/images/clients/macmannie.png" },
+  { name: "communiTEEbyeba", category: "Events" },
+  { name: "Play With Stephen (PWS)", category: "Events", logo: "/images/clients/pws.png" },
+  { name: "Omodaadaa Foundation", category: "Foundations" },
+  { name: "EBA Foundation", category: "Foundations" },
+  { name: "Ann Obaseki", category: "Personal Brands", portrait: "/images/testimonials/ann-obaseki-240x300.webp" },
+  { name: "Stephen Onaivi", category: "Personal Brands", portrait: "/images/testimonials/stephen-onaivi-240x300.webp" },
+  { name: "Tega Agbosa", category: "Personal Brands", portrait: "/images/testimonials/tega-agbosa.webp" },
+  { name: "Dami Dawson", category: "Personal Brands" },
+  { name: "Omoniyi Dada", category: "Personal Brands" },
+  { name: "Yinka Adebayo", category: "Personal Brands" },
+  { name: "Ope Filani", category: "Personal Brands" },
+  { name: "Oscar Oyekan", category: "Personal Brands" },
+  { name: "Temitope Rusenwe", category: "Personal Brands" },
+  { name: "It’s a Wrap", category: "Podcasts" },
+];

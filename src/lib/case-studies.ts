@@ -34,11 +34,19 @@ export const caseStudies: CaseStudy[] = [
     event: "/services/marketing-and-amplification", eventLabel: "Explore Amplification", source: "https://ng.linkedin.com/company/ebabrand",
   },
   {
-    slug: "the-eniivy-experience", title: "The Eniivy Experience (TEE)", category: "MARKETING / EVENT", tags: ["Marketing", "Event"],
-    image: "/images/events/community-circle.webp", alt: "The Eniivy Experience community gathered together",
+    slug: "the-eniivy-experience", title: "communiTEEbyeba", category: "MARKETING / EVENT", tags: ["Marketing", "Event"],
+    image: "/images/events/lasting-moments.webp", alt: "Guests smiling at a communiTEEbyeba event",
     line: "Building a community through marketing and shared experiences.",
-    description: "TEE is a culture-led community platform built around storytelling, connection and shared moments. EBA shapes its experience, communications and audience engagement.",
+    description: "communiTEEbyeba is a culture-led community platform built around storytelling, connection and shared moments. EBA shapes its experience, communications and audience engagement.",
     approach: "The focus: marketing and events. Connect the invitation, the content and the gathering so the community can engage before, during and after each experience.",
     event: "/events/all", eventLabel: "Explore the Experiences", source: "https://enibrand.com/eba-service/",
+  },
+  {
+    slug: "falz-community-hangout", title: "Falz Community Hangout", category: "EVENT", tags: ["Event"],
+    image: "/images/events/falz/moment-6.webp", alt: "Falz performing with a microphone among guests at the Community Hangout",
+    line: "Bringing music, culture and community into the same room.",
+    description: "The Owambe edition of Falz Community Hangout brought the community together in Lagos. The experience connected live performance, shared moments and the energy of the Bahd Gang community.",
+    approach: "The focus: the event experience. Bring the community’s identity into the gathering, creating space for connection and capturing the moments that carry its story beyond the room.",
+    event: "/events/falz-community-hangout", eventLabel: "Explore the Falz Event", source: "https://enibrand.com/",
   },
 ];

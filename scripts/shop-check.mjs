@@ -14,7 +14,7 @@ test('invalid quantities are rejected',()=>{for(const quantity of [0,-1,11,1.5,'
 test('duplicate lines merge with a bounded quantity',()=>{assert.deepEqual(parseBag(JSON.stringify([item,{...item,quantity:10}])),[{...item,quantity:10}]);});
 test('shirt size preferences remain separate',()=>{const lines=[{slug:'signature-shirt',colour:'Forest green',option:'M',quantity:1},{slug:'signature-shirt',colour:'Forest green',option:'L',quantity:1}];assert.deepEqual(parseBag(JSON.stringify(lines)),lines);});
 test('enquiry email uses the approved address and readable selections',()=>{const email=new URL(merchandiseEmail([item]));assert.equal(email.pathname,'hello@enibrand.com');assert.ok(email.searchParams.get('body').includes('The Everyday Bottle — Forest green — quantity 2'));});
-test('preview catalogue does not invent prices or stock',()=>{assert.equal(shopProducts.length,4);for(const product of shopProducts){assert.equal(product.priceNGN,null);assert.equal(product.status,'preview');assertAsset(product.image);for(const colour of product.colours)assertAsset(colour.image);}});
+test('preview catalogue does not invent prices or stock',()=>{assert.equal(shopProducts.length,8);for(const product of shopProducts){assert.equal(product.priceNGN,null);assert.equal(product.status,'preview');assertAsset(product.image);for(const colour of product.colours)assertAsset(colour.image);}});
 function assertAsset(asset){assert.ok(asset.startsWith('/images/shop/'));assert.ok(existsSync(new URL('../public'+asset,import.meta.url)));}
 
 test('different colours remain separate bag entries',()=>{const lines=[item,{...item,colour:'Black'}];assert.deepEqual(parseBag(JSON.stringify(lines)),lines);});

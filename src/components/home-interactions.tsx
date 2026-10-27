@@ -73,12 +73,12 @@ function Counter({ target, label, suffix }: { target: number; label: string; suf
 }
 export function Counters() { return <div className="stats"><Counter target={50} suffix="+" label="Successful Projects"/><Counter target={10} suffix="+" label="Industries Served"/><Counter target={10} suffix="+" label="Years in Africa and beyond"/><Counter target={5} suffix="+" label="Global Brand Markets"/></div>; }
 
-export function HeroVideo() {
+export function HeroVideo({ src = "/videos/hero.mp4" }: { src?: string }) {
   const ref = useRef<HTMLVideoElement>(null);
   const [paused, setPaused] = useState(true);
   const reduce = useReducedMotion();
   useEffect(() => { if (reduce) ref.current?.pause(); else void ref.current?.play().catch(() => {}); }, [reduce]);
-  return <><video ref={ref} src="/videos/hero.mp4" className="hero-video" autoPlay muted loop playsInline preload="metadata" onPlay={() => setPaused(false)} onPause={() => setPaused(true)} aria-label="EBA brand film"/><button className="video-control" aria-label={paused ? "Play background video" : "Pause background video"} onClick={() => { const video = ref.current; if (!video) return; if (video.paused) { void video.play(); setPaused(false); } else { video.pause(); setPaused(true); } }}>{paused ? <Play size={15}/> : <Pause size={15}/>}</button></>;
+  return <><video ref={ref} src={src} className="hero-video" autoPlay muted loop playsInline preload="metadata" onPlay={() => setPaused(false)} onPause={() => setPaused(true)} aria-label="EBA brand film"/><button className="video-control" aria-label={paused ? "Play background video" : "Pause background video"} onClick={() => { const video = ref.current; if (!video) return; if (video.paused) { void video.play(); setPaused(false); } else { video.pause(); setPaused(true); } }}>{paused ? <Play size={15}/> : <Pause size={15}/>}</button></>;
 }
 
 type Polygon = number[][][];

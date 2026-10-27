@@ -28,7 +28,6 @@ export default function Footer() {
           <Link href="/services/b2b">B2B Solutions</Link>
         </nav>
         <div className="footer-column footer-contact"><h3>Get in Touch</h3>
-          <Link href="mailto:hello@enibrand.com"><Mail size={16}/><span>hello@enibrand.com</span></Link>
           <Link href="mailto:info@enibrand.com"><Mail size={16}/><span>info@enibrand.com</span></Link>
           <p><MapPin size={16}/><span>Lagos, Nigeria</span></p>
           <p><Clock3 size={16}/><span>Monday – Friday<br/>9:00am – 6:00pm WAT</span></p>

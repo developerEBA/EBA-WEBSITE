@@ -3,12 +3,12 @@ import { useMemo, useState } from "react";
 import { ArrowLeft, ArrowRight, Search, X } from "lucide-react";
 import { presentedEvents } from "@/lib/event-presentation";
 import { ExperienceCard } from "@/components/events/experience-card";
-const groups = ["All experiences", "Community", "Culture", "Golf & purpose"];
+const groups = ["All experiences", "Community", "Culture", "Sport", "Partnerships"];
 export function ExperienceCollection({ all = false }: { all?: boolean }) {
   const [group,setGroup] = useState("All experiences");
   const [query,setQuery] = useState("");
   const [page,setPage] = useState(1);
-  const results = useMemo(()=>presentedEvents.filter(event=>(group === "All experiences" || event.group === group) && `${event.title} ${event.location} ${event.summary}`.toLowerCase().includes(query.trim().toLowerCase())),[group,query]);
+  const results = useMemo(()=>presentedEvents.filter(event=>(group === "All experiences" || (group === "Partnerships" ? event.partnership : event.group === group)) && `${event.title} ${event.location} ${event.summary}`.toLowerCase().includes(query.trim().toLowerCase())),[group,query]);
   const pageSize=6;
   const pageCount=Math.ceil(results.length/pageSize);
   function goToPage(value:number){setPage(value);document.getElementById("experience-results")?.scrollIntoView({behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",block:"start"});}
