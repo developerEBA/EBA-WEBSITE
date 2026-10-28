@@ -431,6 +431,7 @@ html { scroll-padding-top:125px; }
 }
 /* A restrained green-to-yellow tint across the frosted navigation. */
 .site-header {
+  border-radius:22px;
   background:linear-gradient(115deg,rgba(211,234,217,.66) 0%,rgba(245,246,220,.54) 52%,rgba(255,193,7,.22) 100%);
   border-color:rgba(255,255,239,.64);
   box-shadow:0 8px 28px rgba(5,40,29,.10),inset 0 1px 0 rgba(255,255,255,.65);
@@ -446,6 +447,7 @@ html { scroll-padding-top:125px; }
   text-shadow:0 1px 8px rgba(0,25,15,.4);
 }
 @media(max-width:760px) {
+ .site-header { border-radius:18px; }
   .hero-content > p { max-width:36ch;font-size:14px;line-height:1.75;margin-top:20px; }
 }
 /* Stronger supporting copy and a story panel that uses its available space. */

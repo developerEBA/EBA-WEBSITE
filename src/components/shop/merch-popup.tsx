@@ -54,7 +54,7 @@ export default function MerchPopup() {
             <X size={18} aria-hidden="true" />
           </Dialog.Close>
           <Link href="/shop" onClick={explore} className="merch-popup-art" aria-label="Shop now — explore the EBA company shop">
-            <Image src="/images/shop/merch-popup.png" alt="Get your EBA merch. EBA hoodies, T-shirts, caps, bags, cups and accessories. Shop now." width={1536} height={1024} loading="eager" unoptimized sizes="(max-width: 304px) calc(100vw - 24px), (max-width: 520px) 280px, 360px" />
+            <Image src="/images/shop/merch-popup.webp" alt="Get your EBA merch. EBA hoodies, T-shirts, caps, bags, cups and accessories. Shop now." width={1536} height={1024} loading="eager" unoptimized sizes="(max-width: 304px) calc(100vw - 24px), (max-width: 520px) 280px, 360px" />
           </Link>
         </Dialog.Content>
       </Dialog.Portal>

@@ -6,7 +6,7 @@ import { ArrowUpRight } from "lucide-react";
 import { Photo } from "@/components/shared/photo";
 
 const work = [
-  { name: "Play With Stephen", title: "Golf with a purpose.", text: "Positioning, communications and campaign execution for an autism-awareness golf initiative.", image: "/images/events/swing-for-autism/moment-1.jpg", alt: "Golfers at Play With Stephen", href: "/events/swing-for-autism", tags: "Brand positioning / Communications / Digital" },
+  { name: "Play With Stephen", title: "Golf with a purpose.", text: "Positioning, communications and campaign execution for an autism-awareness golf initiative.", image: "/images/events/swing-for-autism/moment-1.webp", alt: "Golfers at Play With Stephen", href: "/events/swing-for-autism", tags: "Brand positioning / Communications / Digital" },
   { name: "The Eniivy Experience", title: "A reason to come together.", text: "An experience built around storytelling and connection, with EBA shaping the programme, communications and audience engagement.", image: "/images/events/people-and-connection.webp", alt: "Guests connecting at The Eniivy Experience", href: "/events", tags: "Experience strategy / Community / Production" },
 ];
 

@@ -3,7 +3,7 @@ import { eventStories, type EventStory } from "@/lib/event-content";
 // Presentation uses photographs only where a dedicated event gallery exists.
 // Older listings retain their supplied artwork and original date labels.
 const presentation: Record<string, { title: string; group: string; partnership?: boolean; photo?: string; alt?: string; startDate?: string }> = {
-  "swing-for-autism": { title: "Swing for Autism. A purpose in play.", group: "Sport", partnership: true, photo: "/images/events/swing-for-autism/moment-1.jpg", alt: "Golfers at the Play With Stephen Swing for Autism tournament", startDate: "2026-08-21" },
+  "swing-for-autism": { title: "Swing for Autism. A purpose in play.", group: "Sport", partnership: true, photo: "/images/events/swing-for-autism/moment-1.webp", alt: "Golfers at the Play With Stephen Swing for Autism tournament", startDate: "2026-08-21" },
   "falz-community-hangout": { title: "Falz Community Hangout. Owambe edition.", group: "Community", partnership: true, photo: "/images/events/falz/moment-6.webp", alt: "Falz performing with a microphone among guests at the Community Hangout", startDate: "2026-05-02" },
   "sip-and-share": { title: "communiTEEbyeba. Sip & Share.", group: "Community", startDate: "2025-11-18" },
   "swing-for-autism-ghana": { title: "Let’s Swing for Autism. Ghana.", group: "Sport", partnership: true, startDate: "2025-08-24" },

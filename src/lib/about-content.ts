@@ -110,7 +110,7 @@ export const workGalleries = [
         "Conversation and connection at an EBA experience"
       ],
       [
-        "/images/events/swing-for-autism/moment-1.jpg",
+        "/images/events/swing-for-autism/moment-1.webp",
         "A moment from Play With Stephen"
       ]
     ],
@@ -132,7 +132,7 @@ export const workGalleries = [
         "Production equipment and behind-the-scenes detail"
       ],
       [
-        "/images/story-hero.png",
+        "/images/story-hero.webp",
         "A team capturing a live brand experience"
       ]
     ],
@@ -150,11 +150,11 @@ export const workGalleries = [
         "A collaborative strategy session"
       ],
       [
-        "/images/story-strategy-meeting.png",
+        "/images/story-strategy-meeting.webp",
         "People working through ideas in a meeting"
       ],
       [
-        "/images/story-origin-collage.png",
+        "/images/story-origin-collage.webp",
         "Strategy and production imagery"
       ]
     ],
@@ -172,7 +172,7 @@ export const workGalleries = [
         "Behind-the-scenes content production"
       ],
       [
-        "/images/story-hero.png",
+        "/images/story-hero.webp",
         "A live production team at work"
       ],
       [
@@ -198,7 +198,7 @@ export const workGalleries = [
         "An audience at a professional gathering"
       ],
       [
-        "/images/story-contact-event.png",
+        "/images/story-contact-event.webp",
         "People connecting at a brand experience"
       ]
     ],
