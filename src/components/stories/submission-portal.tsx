@@ -5,6 +5,12 @@ import { useEffect, useRef, useState, type FormEvent } from "react";
 import { ArrowRight, CheckCircle2, FileText, LoaderCircle, Megaphone } from "lucide-react";
 import { submissionSchema } from "@/lib/submission-schema";
 
+function playCompletionSound() {
+  const audio = new Audio("/audio/eba-click.wav");
+  audio.volume = 0.45;
+  void audio.play().catch(() => {});
+}
+
 type Kind = "article" | "campaign";
 type Errors = Record<string, string[] | undefined>;
 type Field = { name: string; label: string; max: number; rows?: number; optional?: boolean; type?: string; placeholder?: string; autoComplete?: string; wide?: boolean };
@@ -57,6 +63,7 @@ function EntryForm({ kind, token, tokenError, refresh }: { kind: Kind; token: st
       if (!response.ok) { setErrors(result.fields ?? {}); setMessage(result.error || "Your submission could not be saved. Please try again."); return; }
       if (typeof result.reference !== "string") throw new Error("Missing confirmation");
       setReference(result.reference);
+      playCompletionSound();
     } catch { setMessage("We couldn’t confirm your submission. Check your connection and try again. For help, contact hello@enibrand.com."); }
     finally { setBusy(false); }
   }
