@@ -5,6 +5,7 @@ import "./ui-foundation.css";
 import Footer from "@/components/footer";
 import SiteHeader from "@/components/site-header";
 import MerchPopup from "@/components/shop/merch-popup";
+import { Analytics } from "@vercel/analytics/next";
 const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: "--font-dm-sans",
@@ -36,7 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       data-scroll-behavior="smooth"
       className={`h-full antialiased ${dmSans.variable} ${playfairDisplay.variable} ${yellowtail.variable}`}
     >
-      <body id="site-top" className="min-h-full flex flex-col"><SiteHeader />{children}<Footer /><MerchPopup /></body>
+      <body id="site-top" className="min-h-full flex flex-col"><SiteHeader />{children}<Footer /><MerchPopup /><Analytics /></body>
     </html>
   );
 }
