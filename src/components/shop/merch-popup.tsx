@@ -25,11 +25,12 @@ export default function MerchPopup() {
     } catch { /* Keep the limit in memory if browser storage is unavailable. */ }
     if (views.current >= maxViews) return;
 
+    // Let the page become interactive before showing a non-critical promotion.
     const timer = window.setTimeout(() => {
       views.current += 1;
       try { sessionStorage.setItem(storageKey, String(views.current)); } catch {}
       setOpen(true);
-    }, views.current === 0 ? 0 : 30000);
+    }, views.current === 0 ? 2500 : 30000);
     return () => window.clearTimeout(timer);
   }, [excluded, open]);
 
@@ -53,7 +54,7 @@ export default function MerchPopup() {
             <X size={18} aria-hidden="true" />
           </Dialog.Close>
           <Link href="/shop" onClick={explore} className="merch-popup-art" aria-label="Shop now — explore the EBA company shop">
-            <Image src="/images/shop/merch-popup.png" alt="Get your EBA merch. EBA hoodies, T-shirts, caps, bags, cups and accessories. Shop now." width={1536} height={1024} loading="eager" sizes="(max-width: 304px) calc(100vw - 24px), (max-width: 520px) 280px, 360px" />
+            <Image src="/images/shop/merch-popup.png" alt="Get your EBA merch. EBA hoodies, T-shirts, caps, bags, cups and accessories. Shop now." width={1536} height={1024} loading="eager" unoptimized sizes="(max-width: 304px) calc(100vw - 24px), (max-width: 520px) 280px, 360px" />
           </Link>
         </Dialog.Content>
       </Dialog.Portal>

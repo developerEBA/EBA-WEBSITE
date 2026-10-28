@@ -10,8 +10,18 @@ export function AboutVideo() {
     if (!video) return;
 
     let inView = false;
+    let sourceAttached = false;
     const syncPlayback = () => {
       if (inView && !document.hidden) {
+        // Defer the 29 MB film until its section is actually on screen.
+        if (!sourceAttached) {
+          const source = video.querySelector("source[data-src]");
+          if (source instanceof HTMLSourceElement) {
+            source.src = source.dataset.src ?? "";
+            video.load();
+            sourceAttached = true;
+          }
+        }
         void video.play().catch(() => {
           // A browser may temporarily block playback while media is loading.
         });
@@ -36,8 +46,8 @@ export function AboutVideo() {
   return (
     <figure className="about-film">
       <div className="about-film-player">
-        <video ref={videoRef} muted loop playsInline preload="metadata" aria-label="EBA anniversary film">
-          <source src="/videos/eba-anniversary.mp4" type="video/mp4" />
+        <video ref={videoRef} muted loop playsInline preload="none" aria-label="EBA anniversary film">
+          <source data-src="/videos/eba-anniversary.mp4" type="video/mp4" />
           Your browser does not support video playback.
         </video>
       </div>
