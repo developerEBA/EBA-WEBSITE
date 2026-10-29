@@ -15,11 +15,12 @@ const stephen = client("Stephen Onaivi");
 export const globalFootprint = [
   { id: "nigeria", label: "Nigeria", country: "Nigeria", coordinates: [8, 9], clients: [
     afriex, client("mediaReach OMD"), client("HostessNG"), client("Loud Choir Africa"),
-    client("Hoardings Africa"), pws, communitee, client("EBA Foundation"),
+    client("DDT Autos"), client("Hoardings Africa"), client("Maison86"), client("Lounge Network"),
+    pws, client("Talentville Africa"), communitee, client("EBA Foundation"), client("Olston Foundation"),
     client("Ann Obaseki"), stephen, client("Omoniyi Dada"),
   ] },
   { id: "ghana", label: "Ghana", country: "Ghana", coordinates: [-1.5, 7.9], clients: [pws, stephen, afriex] },
-  { id: "south-africa", label: "South Africa", country: "South Africa", coordinates: [25, -29], clients: [communitee, afriex, client("Omoniyi Dada")] },
+  { id: "south-africa", label: "South Africa", country: "South Africa", coordinates: [25, -29], clients: [communitee, afriex, client("Omoniyi Dada"), client("Omodaadaa Foundation")] },
   { id: "cotonou", label: "Cotonou, Benin", country: "Benin", coordinates: [2.4, 6.4], clients: [communitee, afriex, pws, client("Hoardings Africa")] },
   { id: "dubai", label: "Dubai, UAE", country: "United Arab Emirates", coordinates: [55.3, 25.2], clients: [client("Dinku Transnational")] },
   { id: "kenya", label: "Kenya", country: "Kenya", coordinates: [38, 0.2], clients: [afriex, communitee] },
