@@ -15,7 +15,7 @@ const stephen = client("Stephen Onaivi");
 export const globalFootprint = [
   { id: "nigeria", label: "Nigeria", country: "Nigeria", coordinates: [8, 9], clients: [
     afriex, client("mediaReach OMD"), client("HostessNG"), client("Loud Choir Africa"),
-    client("DDT Autos"), client("Hoardings Africa"), client("Maison86"), client("Lounge Network"),
+    client("DDT Autos"), client("Hoardings Africa"), client("Maison86"), client("Lounge Network"), client("Signal"),
     pws, client("Talentville Africa"), communitee, client("EBA Foundation"), client("Olston Foundation"),
     client("Ann Obaseki"), stephen, client("Omoniyi Dada"),
   ] },
