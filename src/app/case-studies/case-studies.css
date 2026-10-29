@@ -53,13 +53,13 @@
 .portfolio-result-count{font-size:10px;color:#52665b;margin:18px 0}
 .client-logo-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}
 .client-logo-tile{min-width:0;border:1px solid #073f3020;border-radius:8px;background:#fffdf7;overflow:hidden;display:flex;flex-direction:column}
-.client-logo-art{position:relative;height:135px;display:flex;align-items:center;justify-content:center;padding:24px;text-align:center}
-.client-logo-art>img:not(.client-portrait){padding:25px}
+.client-logo-art{position:relative;height:155px;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;background:#fff}
+.client-logo-art>img:not(.client-portrait){padding:8px}
 .client-name-display{font-size:20px;font-weight:600;line-height:1.25;letter-spacing:-.03em;color:#073f30;overflow-wrap:anywhere}
 .client-logo-caption{padding:14px 17px;border-top:1px solid #073f3010;margin-top:auto}
 .case-page .client-logo-caption h3{font-family:var(--font-dm-sans),sans-serif;font-size:11px;line-height:1.5;letter-spacing:0;margin:0;font-weight:500}
 .client-logo-caption>span{font-size:8px;text-transform:uppercase;letter-spacing:.1em;opacity:.65}
-.client-logo-dark .client-logo-art{background:#073f30}
+.client-logo-dark .client-logo-art{background:#fff}
 .client-person-tile .client-logo-art{background:#eef0e5}
 .client-portrait{border-radius:50%;width:78px;height:78px;object-fit:cover;object-position:center 25%}
 .personal-brand-invitation{margin-top:35px;background:#eeeedd;border-radius:8px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:35px}
@@ -67,7 +67,7 @@
 .personal-brand-invitation p{font-size:13px;line-height:1.85;max-width:62ch;color:#52665b}
 .personal-brand-invitation>.pill{flex-shrink:0;font-size:12px}
 @media(max-width:900px){.client-logo-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.personal-brand-invitation{align-items:start;flex-direction:column}}
-@media(max-width:600px){.client-portfolio{padding-block:45px 55px}.client-portfolio-heading{flex-direction:column;align-items:start;gap:20px}.client-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.client-logo-art{height:115px;padding:16px}.client-logo-art>img:not(.client-portrait){padding:18px}.client-name-display{font-size:18px}.client-logo-caption{padding:12px}.portfolio-filters>button{font-size:10px;padding:9px 12px}.personal-brand-invitation{padding:25px}.case-page .personal-brand-invitation h3{font-size:31px}}
+@media(max-width:600px){.client-portfolio{padding-block:45px 55px}.client-portfolio-heading{flex-direction:column;align-items:start;gap:20px}.client-logo-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.client-logo-art{height:130px;padding:12px}.client-logo-art>img:not(.client-portrait){padding:4px}.client-name-display{font-size:18px}.client-logo-caption{padding:12px}.portfolio-filters>button{font-size:10px;padding:9px 12px}.personal-brand-invitation{padding:25px}.case-page .personal-brand-invitation h3{font-size:31px}}
 .case-index .case-hero-brand-art{background:radial-gradient(ellipse at 40% 35%,#fffdf7,#e0e4d5)}
 
 
