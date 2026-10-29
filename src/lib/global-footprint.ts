@@ -14,7 +14,7 @@ const stephen = client("Stephen Onaivi");
 // Client/location relationships supplied by EBA. City entries are labelled explicitly.
 export const globalFootprint = [
   { id: "nigeria", label: "Nigeria", country: "Nigeria", coordinates: [8, 9], clients: [
-    afriex, client("mediaReach OMD"), client("Hostessng"), client("Official Loud Urban Choir"),
+    afriex, client("mediaReach OMD"), client("HostessNG"), client("Loud Choir Africa"),
     client("Hoardings Africa"), pws, communitee, client("EBA Foundation"),
     client("Ann Obaseki"), stephen, client("Omoniyi Dada"),
   ] },
