@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "talentville-africa", title: "Talentville Africa", category: "PR", tags: ["Public Relations"],
-    image: "/images/case-studies/talentville.png", alt: "Talentville Africa logo", imageFit: "contain",
+    image: "/images/clients/talentville.png", alt: "Talentville Africa logo", imageFit: "contain",
     line: "Connecting entertainment stories with the media.",
     description: "Public relations is at the heart of EBA’s work with Talentville Africa. The partnership brings entertainment projects into the public conversation through media engagement and storytelling.",
     approach: "The focus: PR. For Bovi’s Guilty As Charged press conference, EBA captured the conversations and anticipation ahead of the show, as shared by Talentville Africa and EBA.",
