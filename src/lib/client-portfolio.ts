@@ -1,6 +1,6 @@
 export const portfolioCategories = ["All", "Companies", "Events", "Foundations", "Personal Brands", "Podcasts"] as const;
 export type PortfolioCategory = Exclude<typeof portfolioCategories[number], "All">;
-export type PortfolioClient = { name: string; category: PortfolioCategory; logo?: string; dark?: boolean; portrait?: string };
+export type PortfolioClient = { name: string; category: PortfolioCategory; logo?: string; dark?: boolean; portrait?: string; background?: "black" };
 // Relationships and names supplied by EBA. A name is shown when no verified logo is available.
 export const portfolioClients: PortfolioClient[] = [
   { name: "Afriex", category: "Companies", logo: "/images/clients/afriex.svg" },
@@ -15,7 +15,7 @@ export const portfolioClients: PortfolioClient[] = [
   { name: "Maison86", category: "Companies" },
   { name: "Kitchen 86", category: "Companies", logo: "/images/clients/kitchen86.jpg", dark: true },
   { name: "mediaReach OMD", category: "Companies", logo: "/images/case-studies/mediareach.png" },
-  { name: "Lounge Network", category: "Companies", logo: "/images/clients/lounge.png", dark: true },
+  { name: "Lounge Network", category: "Companies", logo: "/images/clients/lounge.png", dark: true, background: "black" },
   { name: "Ojavendor", category: "Companies" },
   { name: "Signal", category: "Companies" },
   { name: "Play With Stephen (PWS)", category: "Companies", logo: "/images/clients/pws.png", dark: true },

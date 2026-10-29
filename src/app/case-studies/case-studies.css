@@ -60,6 +60,7 @@
 .case-page .client-logo-caption h3{font-family:var(--font-dm-sans),sans-serif;font-size:11px;line-height:1.5;letter-spacing:0;margin:0;font-weight:500}
 .client-logo-caption>span{font-size:8px;text-transform:uppercase;letter-spacing:.1em;opacity:.65}
 .client-logo-dark .client-logo-art{background:#fff}
+.client-logo-black .client-logo-art{background:#000}
 .client-person-tile .client-logo-art{background:#eef0e5}
 .client-portrait{border-radius:50%;width:78px;height:78px;object-fit:cover;object-position:center 25%}
 .personal-brand-invitation{margin-top:35px;background:#eeeedd;border-radius:8px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:35px}
