@@ -12,7 +12,7 @@ export const caseStudies: CaseStudy[] = [
   {
     slug: "play-with-stephen", title: "Play With Stephen", category: "EVENT", tags: ["Event"],
     image: "/images/events/swing-for-autism/moment-6.jpg", alt: "Play With Stephen golfers on the course",
-    line: "Turning a golf gathering into a platform for purpose.",
+    line: "From golf tournament to a year-round campaign for autism education, participation and community.",
     description: "Play With Stephen brings golf, community and autism awareness together. EBA supported the initiative through positioning, communications, campaign execution and its digital presence.",
     approach: "The focus: the event experience. Connect the reason for gathering with the invitation, the story and the audience engagement, keeping autism awareness at the centre.",
     event: "/events/swing-for-autism", eventLabel: "Explore the Event", source: "https://enibrand.com/eba-service/",
