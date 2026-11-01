@@ -18,6 +18,7 @@ export const portfolioClients: PortfolioClient[] = [
   { name: "Lounge Network", category: "Companies", logo: "/images/clients/lounge.png", dark: true, background: "black" },
   { name: "Ojavendor", category: "Companies" },
   { name: "Signal", category: "Companies", logo: "/images/clients/signal.png" },
+  { name: "Zutari", category: "Companies" },
   { name: "Play With Stephen (PWS)", category: "Companies", logo: "/images/clients/pws.png", dark: true },
   { name: "Talentville Africa", category: "Companies", logo: "/images/clients/talentville.png", dark: true },
   { name: "Olston Foundation", category: "Companies", logo: "/images/clients/olston-foundation.png", dark: true },
