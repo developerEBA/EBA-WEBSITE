@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { ActionLink } from "@/components/shared/action-link";
-import { Entrance, Reveal } from "@/components/shared/motion";
+import { Entrance } from "@/components/shared/motion";
 import { PwsImpactCounter } from "@/components/pws-impact-counter";
 
 const photo = (n: number) => `/images/events/swing-for-autism/moment-${n}.${n === 5 || n === 6 ? "jpg" : "webp"}`;
@@ -45,7 +45,7 @@ export function PlayWithStephenCaseStudy() {
     </section>
 
     <section className="pws-initiatives">
-      <div className="section-shell"><Reveal className="pws-section-heading"><span className="pws-eyebrow">FOUR CONNECTED INITIATIVES</span><h2>Each one moved<br/><em>the campaign forward.</em></h2><p>Education, participation and visibility worked together to keep the purpose present throughout the year.</p></Reveal>
+      <div className="section-shell"><Entrance className="pws-section-heading"><span className="pws-eyebrow">FOUR CONNECTED INITIATIVES</span><h2>Each one moved<br/><em>the campaign forward.</em></h2><p>Education, participation and visibility worked together to keep the purpose present throughout the year.</p></Entrance>
         <div className="pws-initiative-grid">{initiatives.map((item, i) => <Entrance as="article" key={item.number} className="pws-initiative-card" delay={(i % 2) * .08}><div className="pws-initiative-image"><Image src={photo(item.image)} alt={item.alt} fill sizes="(max-width:760px) 90vw, 44vw"/><span>{item.number}</span></div><div className="pws-initiative-copy"><span className="pws-card-kicker">CAMPAIGN PILLAR</span><h3>{item.title}</h3><p>{item.text}</p></div></Entrance>)}</div>
       </div>
     </section>
