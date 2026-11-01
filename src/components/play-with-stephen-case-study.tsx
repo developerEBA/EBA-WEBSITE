@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { ActionLink } from "@/components/shared/action-link";
-import { Entrance } from "@/components/shared/motion";
+import { Entrance, Reveal } from "@/components/shared/motion";
 import { PwsImpactCounter } from "@/components/pws-impact-counter";
 
 const photo = (n: number) => `/images/events/swing-for-autism/moment-${n}.${n === 6 ? "jpg" : "webp"}`;
