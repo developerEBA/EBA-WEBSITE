@@ -1,0 +1,46 @@
+.impact-page { padding-bottom: 70px; }
+.impact-page h1,.impact-page h2,.impact-page h3 { text-wrap: balance; }
+.impact-hero { padding: 125px 0 54px; background: #073f30; color: #fffbed; }
+.impact-hero-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(30px,5vw,76px); align-items: center; }
+.impact-hero .eyebrow,.impact-process .eyebrow,.impact-cta .eyebrow { color: #ffc107; }
+.impact-hero h1 { font-size: clamp(44px,5.4vw,78px); line-height: 1.06; margin: 20px 0 25px; max-width: 12ch; }
+.impact-hero-copy > p { max-width: 48ch; color: #e0e7d5; font-size: 17px; line-height: 1.85; margin-bottom: 28px; }
+.impact-hero-photo { margin: 0; }
+.impact-hero-photo > div { position: relative; aspect-ratio: 1 / 1.07; overflow: hidden; border-radius: 120px 12px 12px 12px; }
+.impact-page img { object-fit: cover; }
+.impact-hero-photo figcaption { font-size: 12px; line-height: 1.7; padding-top: 16px; color: #e0e7d5; }
+.impact-hero-photo figcaption span { display: block; font-size: 10px; color: #b8ccbb; }
+.impact-story { display: grid; grid-template-columns: 1fr 1.1fr; gap: 80px; padding-block: 85px; }
+.impact-story h2 { margin-top: 16px; max-width: 17ch; }
+.impact-story p { font-size: 17px; line-height: 1.9; color: #53694e; }
+.impact-story p + p { margin-top: 20px; }
+.impact-section-heading { margin-bottom: 36px; }
+.impact-section-heading h2 { margin-top: 12px; }
+.impact-services { padding-bottom: 80px; }
+.impact-services-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 36px; }
+.impact-services-grid article { border-top: 2px solid #d8bf62; padding-top: 22px; }
+.impact-number { display: block; font-size: 12px; letter-spacing: .12em; color: #6a7654; }
+.impact-page h3 { font-size: clamp(25px,2.3vw,32px); line-height: 1.2; margin: 18px 0 15px; }
+.impact-services-grid p,.impact-process li p { font-size: 15px; line-height: 1.8; color: #53694e; }
+.impact-process { background: #153f31; color: #fffbed; padding-block: 65px 70px; }
+.impact-process ol { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 30px; list-style: none; padding: 0; margin: 0; }
+.impact-process li { border-top: 1px solid #78907b; padding-top: 24px; }
+.impact-process .impact-number { color: #ffc107; }
+.impact-process li p { color: #dce7cf; }
+.impact-work { padding-block: 80px; }
+.impact-work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.impact-work-grid article { min-width: 0; }
+.impact-work-grid figure { margin: 0; }
+.impact-work-image { position: relative; aspect-ratio: 1.5; border-radius: 12px; overflow: hidden; background: #dce3d1; }
+.impact-work-grid figcaption { font-size: 11px; color: #53694e; line-height: 1.6; margin-top: 10px; }
+.impact-work-grid article:first-child img { object-position: center 24%; }
+.impact-work-copy { padding-top: 22px; }
+.impact-work-copy h3 { margin: 10px 0; }
+.impact-work-copy p { color: #53694e; line-height: 1.7; }
+.impact-cta { text-align: center; padding: 58px 30px; background: #e9e5d6; border-radius: 16px; }
+.impact-cta .eyebrow { color: #526a3f; }
+.impact-cta h2 { max-width: 21ch; margin: 18px auto; }
+.impact-cta p { font-size: 20px; margin-bottom: 26px; }
+@media (max-width: 1000px) { .impact-story { gap: 40px; }.impact-services-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }.impact-process ol { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 760px) { .impact-page { padding-bottom: 40px; }.impact-hero { padding: 108px 0 38px; }.impact-hero-grid,.impact-story,.impact-work-grid { grid-template-columns: 1fr; gap: 32px; }.impact-hero h1 { max-width: 15ch; }.impact-hero-photo > div { aspect-ratio: 1.4; border-top-left-radius: 70px; }.impact-story { padding-block: 48px; }.impact-services { padding-bottom: 48px; }.impact-process { padding-block: 45px; }.impact-work { padding-block: 48px; }.impact-work-grid { gap: 36px; }.impact-cta { padding: 38px 22px; } }
+@media (max-width: 480px) { .impact-services-grid,.impact-process ol { grid-template-columns: 1fr; gap: 28px; }.impact-hero h1 { font-size: 44px; }.impact-hero-copy > p,.impact-story p { font-size: 16px; } }
