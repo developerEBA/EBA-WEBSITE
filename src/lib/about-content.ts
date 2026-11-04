@@ -4,8 +4,8 @@ export const sectorDetails = [
     "title": "Impact & Development",
     "line": "Stories that move purpose into action.",
     "intro": "Foundations, nonprofits, CSR teams and advocacy groups do work that matters. We make sure the people who need to hear about it actually do.",
-    "body": "Good intentions don’t speak for themselves. Impact organisations often have the work, the results and the people, but not the narrative that earns trust, funding and partnership. At EBA, we treat your mission the way a good editor treats a story: find the human centre, shape it with clarity, and put it in front of the right audience at the right moment.",
-    "image": "/images/impact/community-volunteers.jpg",
+    "body": "Foundations, nonprofits, advocacy platforms and purpose-led organisations need more than visibility. They need a clear story about the change they are working towards, the communities involved and the value of their work.",
+    "image": "/images/sector-impact.png",
     "focus": [
       [
         "A clear impact narrative",
