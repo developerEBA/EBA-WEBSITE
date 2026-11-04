@@ -25,8 +25,8 @@ export const sectorDetails = [
   {
     "slug": "media-and-entertainment",
     "title": "Media & Entertainment",
-    "line": "Where culture meets conversation.",
-    "intro": "Build a distinct voice in a world that is always watching, listening and moving.",
+    "line": "Visibility where culture and conversation happen.",
+    "intro": "Talent, platforms and entertainment brands live and die by attention. We build the presence, the press and the moments that keep you in the conversation.",
     "body": "We work with talent, media platforms and entertainment brands to connect a strong identity with the right audience. Positioning, storytelling and considered amplification help a platform stand for something beyond the next announcement.",
     "image": "/images/sector-media.png",
     "focus": [
