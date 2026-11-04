@@ -57,8 +57,6 @@ export function ImpactDevelopment() {
         <article><div className="impact-work-photo"><Image src="/images/impact/women-together.jpg" alt="Women standing together in solidarity; illustrative stock photography" fill sizes="(max-width: 760px) 90vw, 45vw"/></div><div className="impact-work-meta"><span>Foundation / Women’s voices</span><span>Feature forthcoming</span></div><h3>Omodaadaa Foundation</h3><p>International Women’s Day</p></article>
         <article><div className="impact-work-photo"><Image src="/images/events/swing-for-autism/moment-1.webp" alt="Golfers at a Play With Stephen event; existing event imagery, not the Autism Hero Spotlight feature" fill sizes="(max-width: 760px) 90vw, 45vw"/></div><div className="impact-work-meta"><span>Advocacy / Autism awareness</span><span>Feature forthcoming</span></div><h3>Play With Stephen 2026</h3><p>Autism Hero Spotlight</p></article>
       </div>
-      <p className="impact-credits">Illustrative photography: <a href="https://unsplash.com/photos/QhYYE7-VI2k" target="_blank" rel="noreferrer">Vitaly Gariev / Unsplash</a> · <a href="https://www.pexels.com/photo/group-of-women-standing-close-to-each-other-7951918/" target="_blank" rel="noreferrer">Pexels</a>. Play With Stephen: existing event photography.</p>
     </div></section>
-    <section className="impact-cta"><div className="section-shell"><span className="impact-eyebrow">Let’s move purpose into action</span><h2>Doing work that deserves to be heard?<br/><em>Let’s tell it properly.</em></h2><ActionLink href="/get-in-touch" variant="yellow">Start a conversation</ActionLink></div></section>
   </main>;
 }
