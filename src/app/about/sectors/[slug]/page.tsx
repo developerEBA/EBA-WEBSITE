@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { sectorDetails } from "@/lib/about-content";
 import { AboutDetail } from "@/components/about-detail";
+import { ImpactDevelopment } from "@/components/impact-development";
 import "../../about-detail.css";
 type Props = { params: Promise<{ slug: string }> };
 export function generateStaticParams() { return sectorDetails.map(item => ({ slug: item.slug })); }
@@ -14,5 +15,6 @@ export default async function SectorPage({ params }: Props) {
   const { slug } = await params;
   const item = sectorDetails.find(sector => sector.slug === slug);
   if (!item) notFound();
+  if (slug === "impact-and-development") return <ImpactDevelopment/>;
   return <AboutDetail {...item} eyebrow="OUR SECTORS" navigation={sectorDetails.map(sector => ({ title: sector.title, href: `/about/sectors/${sector.slug}`, current: sector.slug === slug }))}/>;
 }

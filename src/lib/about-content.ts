@@ -2,8 +2,8 @@ export const sectorDetails = [
   {
     "slug": "impact-and-development",
     "title": "Impact & Development",
-    "line": "Purpose, made understood.",
-    "intro": "Communications that connect meaningful work with the people it is meant to reach.",
+    "line": "Stories that move purpose into action.",
+    "intro": "Foundations, nonprofits, CSR teams and advocacy groups do work that matters. We make sure the people who need to hear about it actually do.",
     "body": "Foundations, nonprofits, advocacy platforms and purpose-led organisations need more than visibility. They need a clear story about the change they are working towards, the communities involved and the value of their work.",
     "image": "/images/sector-impact.png",
     "focus": [
