@@ -1,18 +1,21 @@
 import mediaCoverage from "@/lib/stories/media-coverage.json";
 import importedPosts from "@/lib/stories/posts.json";
+import editorialUpdates from "@/lib/stories/editorial-updates.json";
+import newsroomAdditions from "@/lib/stories/newsroom-additions.json";
 import { contentTypeFromCategory, type JournalContentType } from "@/lib/story-format";
 export type StorySegment = { type: string; text: string; href?: string };
 export type StoryBlock = { type: string; segments: StorySegment[] };
-export type StoryBase = { id: number; slug: string; title: string; date: string; category: string; excerpt: string; image: string | null; imageAlt: string; readingMinutes: number; sourceUrl: string; publication?: string; originalAuthor?: string | null; mediaCoverage?: boolean; blocks: StoryBlock[] };
+export type StoryBase = { id: number; slug: string; title: string; date: string; category: string; excerpt: string; image: string | null; imageAlt: string; imageFit?: string; imagePosition?: string; readingMinutes: number; sourceUrl: string; publication?: string; publicationUrl?: string; client?: string; country?: string; ebaRole?: string; originalAuthor?: string | null; mediaCoverage?: boolean; blocks: StoryBlock[] };
 export type ArticleStory = StoryBase & { contentType: "article"; author?: string };
 export type PressReleaseStory = StoryBase & { contentType: "press-release"; organisation?: string; mediaContact?: string };
 export type Story = ArticleStory | PressReleaseStory;
 export type StorySummary = Omit<StoryBase, "blocks"> & { contentType: JournalContentType };
-export const stories: Story[] = [...importedPosts, ...mediaCoverage].map(story => {
+export const stories: Story[] = [...importedPosts, ...mediaCoverage, ...newsroomAdditions].map(original => {
+  const story = { ...original, ...editorialUpdates.find(update => update.id === original.id) };
   const contentType = contentTypeFromCategory(story.category);
   if (!contentType) throw new Error(`Unreviewed story category: ${story.category}`);
   return contentType === "article" ? { ...story, contentType } : { ...story, contentType };
-});
+}).toSorted((a, b) => b.date.localeCompare(a.date) || b.id - a.id);
 export const storySummaries: StorySummary[] = stories.map(({ blocks: _blocks, ...story }) => {
   void _blocks;
   return story;

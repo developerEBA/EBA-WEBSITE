@@ -34,7 +34,7 @@ export default function Footer() {
           <span className="footer-location-note">Rooted in Africa.<br/>Built for a wider conversation.</span>
         </div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} Eni Brand Architect. All rights reserved.</span><span>Strategy. Story. Lasting impact.</span><Link href="#site-top">Back to top <ArrowUp size={14}/></Link></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} Eni Brand Architect. All rights reserved.</span><span>Strategy. Story. Lasting impact.</span><a href="#site-top">Back to top <ArrowUp size={14}/></a></div>
     </div>
   </footer></>;
 }

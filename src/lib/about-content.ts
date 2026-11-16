@@ -1,3 +1,4 @@
+// Sector copy supplied by the client. Selected Work permissions confirmed in chat on 16 November 2026.
 export const sectorDetails = [
   {
     "slug": "impact-and-development",
@@ -8,19 +9,77 @@ export const sectorDetails = [
     "image": "/images/sector-impact.png",
     "focus": [
       [
-        "A clear impact narrative",
-        "Turn complex programmes and organisational goals into a story people can understand."
+        "Foundation & Nonprofit Communications",
+        "Positioning, messaging and launch communications that tell people who you are and why you exist."
       ],
       [
-        "Stakeholder connection",
-        "Shape communication for communities, partners, supporters and decision-makers."
+        "CSR & Sustainability Storytelling",
+        "Turning corporate giving and community programmes into credible, human stories rather than box-ticking reports."
       ],
       [
-        "Evidence-led storytelling",
-        "Give research, programme stories and documented outcomes a clear place in the conversation."
+        "Advocacy & Awareness Campaigns",
+        "Campaigns built to shift conversation and drive participation."
+      ],
+      [
+        "Press & Media Relations",
+        "Press releases, announcements and media outreach that put your work in the public eye."
+      ],
+      [
+        "Leadership & Board Communications",
+        "Profile building and announcements for founders, trustees and appointees."
+      ],
+      [
+        "Events & Stakeholder Engagement",
+        "Launches, community activations and donor and partner moments."
       ]
     ],
-    "service": "research-and-insights"
+    "service": "research-and-insights",
+    "workflow": [
+      [
+        "Listen",
+        "We start with your mission, your community and what success looks like."
+      ],
+      [
+        "Find the story",
+        "We identify the people, outcomes and moments worth telling."
+      ],
+      [
+        "Shape the message",
+        "One clear narrative, adapted for press, social, partners and funders."
+      ],
+      [
+        "Amplify",
+        "We place and distribute it where your audiences actually pay attention."
+      ]
+    ],
+    "selectedWork": [
+      {
+        "client": "Omodaadaa Foundation",
+        "work": "International Women’s Day",
+        "images": [
+          {
+            "src": "/images/clients/omodaadaa-foundation-community.webp",
+            "alt": "Women celebrating together at an Omodaadaa Foundation community gathering",
+            "fit": "cover"
+          }
+        ],
+        "href": "",
+        "permissionConfirmed": true
+      },
+      {
+        "client": "Play With Stephen 2026",
+        "work": "Autism Hero Spotlight",
+        "images": [
+          {
+            "src": "/images/clients/pws.png",
+            "alt": "Play With Stephen logo",
+            "fit": "contain"
+          }
+        ],
+        "href": "",
+        "permissionConfirmed": true
+      }
+    ]
   },
   {
     "slug": "media-and-entertainment",
@@ -31,65 +90,251 @@ export const sectorDetails = [
     "image": "/images/sector-media.png",
     "focus": [
       [
-        "Talent & platform positioning",
-        "Clarify what makes a person, production or platform relevant to its audience."
+        "Talent & Personal Brand Strategy",
+        "Positioning and content for creators, performers and public figures."
       ],
       [
-        "Launches & publicity",
-        "Develop narratives and communications for releases, announcements and cultural moments."
+        "PR & Press Conferences",
+        "Press kits, media invitations, announcements and on-the-day coordination."
       ],
       [
-        "Community & visibility",
-        "Connect content and distribution so attention can become a more sustained relationship."
+        "Show, Tour & Release Campaigns",
+        "Pre-launch buzz through to post-event momentum."
+      ],
+      [
+        "LinkedIn & Social Content",
+        "Thought-leadership and audience-building content for executives and personalities."
+      ],
+      [
+        "Sponsor & Partnership Coordination",
+        "Aligning brands, sponsors and platforms around shared moments."
+      ],
+      [
+        "Event & Stage Production Support",
+        "Run-of-show, talking-head promos and speaker announcements."
       ]
     ],
-    "service": "pr-and-strategic-communications"
+    "service": "pr-and-strategic-communications",
+    "workflow": [
+      [
+        "Position",
+        "Define what makes you worth watching."
+      ],
+      [
+        "Package",
+        "Build the assets: press kit, scripts, visuals, content calendar."
+      ],
+      [
+        "Launch",
+        "Roll out across press, social and live moments."
+      ],
+      [
+        "Sustain",
+        "Keep the momentum going after the spotlight moves."
+      ]
+    ],
+    "selectedWork": [
+      {
+        "client": "Bovi",
+        "work": "“Guilty As Charged” press conference",
+        "images": [
+          {
+            "src": "/images/case-studies/bovi-lagos.jpg",
+            "alt": "Bovi beside Guilty As Charged branding",
+            "fit": "cover"
+          }
+        ],
+        "href": "/case-studies/bovi-guilty-as-charged",
+        "permissionConfirmed": true
+      },
+      {
+        "client": "Falz The Bhad Guy",
+        "work": "Community Hangout",
+        "images": [
+          {
+            "src": "/images/events/falz/moment-6.webp",
+            "alt": "Falz performing among guests at the Community Hangout",
+            "fit": "cover"
+          }
+        ],
+        "href": "/events/falz-community-hangout",
+        "permissionConfirmed": true
+      },
+      {
+        "client": "Talentville and Loud Urban Choir",
+        "work": "Q4 press release campaign",
+        "images": [
+          {
+            "src": "/images/stories/choir-guilty-as-charged.webp",
+            "alt": "Loud Urban Choir performing at Bovi’s Guilty as Charged show",
+            "fit": "cover"
+          }
+        ],
+        "href": "",
+        "permissionConfirmed": true
+      }
+    ]
   },
   {
     "slug": "corporate-and-professional",
     "title": "Corporate & Professional",
-    "line": "Credibility in every conversation.",
-    "intro": "Clear positioning and considered communication for organisations and the people who lead them.",
-    "body": "Companies, institutions, founders and professional services need a consistent way to explain their value. We connect the business story, leadership voice and public presence around what the organisation needs to be known for.",
+    "line": "A clear voice for business and credibility.",
+    "intro": "Companies, institutions and leaders are judged by how clearly they communicate. We help you say what matters, in a voice people trust.",
+    "body": "In business, reputation is a working asset. It shapes who hires you, who partners with you and who takes your call. But most corporate communication is either silent or forgettable. EBA brings an editorial eye to corporate voice: sharper positioning, leadership visibility that feels human, and communications that hold up under scrutiny.",
     "image": "/images/sector-corporate.png",
     "focus": [
       [
-        "Corporate reputation",
-        "Build a communications direction rooted in the organisation’s identity and objectives."
+        "Corporate Positioning & Messaging",
+        "A clear articulation of who you are, what you stand for and why it matters."
       ],
       [
-        "Leadership communication",
-        "Give founders and executives a clear narrative for stakeholders and public audiences."
+        "Executive & Leadership Visibility",
+        "LinkedIn strategy and thought-leadership content for founders, MDs and senior leaders."
       ],
       [
-        "Business storytelling",
-        "Make capabilities, ideas and organisational change easier to understand."
+        "Personal Brand for Professionals",
+        "Building credible public profiles for executives, consultants and entrepreneurs."
+      ],
+      [
+        "PR & Media Relations",
+        "Announcements, press releases, awards entries and reputation management."
+      ],
+      [
+        "Internal & Stakeholder Communications",
+        "Newsletters, reports and updates that keep teams, clients and partners aligned."
+      ],
+      [
+        "Corporate Events & Sponsor Coordination",
+        "Business events, launches and partnership activations."
       ]
     ],
-    "service": "brand-and-reputation"
+    "service": "brand-and-reputation",
+    "workflow": [
+      [
+        "Audit",
+        "We review how you currently show up, internally and externally."
+      ],
+      [
+        "Define",
+        "We agree the positioning, tone and priority audiences."
+      ],
+      [
+        "Produce",
+        "Content, press materials, reports and executive voice, built to a consistent standard."
+      ],
+      [
+        "Maintain",
+        "A steady rhythm of publishing and reporting that compounds credibility over time."
+      ]
+    ],
+    "selectedWork": [
+      {
+        "client": "MediaReach OMD",
+        "work": "Leadership content for its MD",
+        "images": [
+          {
+            "src": "/images/case-studies/mediareach.png",
+            "alt": "mediaReach OMD logo",
+            "fit": "contain"
+          }
+        ],
+        "href": "/case-studies/mediareach",
+        "permissionConfirmed": true
+      }
+    ]
   },
   {
     "slug": "culture-and-creative-industries",
     "title": "Culture & Creative Industries",
-    "line": "Distinctive thinking. Lasting relevance.",
-    "intro": "Help creative voices and cultural organisations communicate what makes their work matter.",
-    "body": "Artists, creative businesses and cultural communities bring distinctive perspectives into the world. We help shape the story around that work without losing the character, context and creative ambition that make it meaningful.",
+    "line": "Turning distinctive thinking into lasting relevance.",
+    "intro": "Creative businesses and cultural voices need more than exposure. They need a story with staying power.",
+    "body": "Creative work is personal, and so is the way it needs to be told. Artists, galleries, hospitality brands and cultural platforms often have a strong point of view but no consistent way of sharing it. EBA works like an editorial partner: we find what is distinctive about your work, give it a clear shape, and build a body of content that lasts beyond a single post or event.",
     "image": "/images/sector-culture.png",
     "focus": [
       [
-        "Identity & creative positioning",
-        "Translate a distinctive point of view into a coherent brand story."
+        "Creative Brand Positioning",
+        "Defining the point of view that sets your work apart."
       ],
       [
-        "Stories & experiences",
-        "Connect projects, content and gatherings with the communities around them."
+        "Editorial & Content Series",
+        "Long-form features, interviews and recurring series that build a loyal audience."
       ],
       [
-        "Relevant amplification",
-        "Choose channels and conversations that make sense for the work and its audience."
+        "Pitch & Portfolio Content",
+        "Briefs, decks and narratives for galleries, exhibitions and partnerships."
+      ],
+      [
+        "Lifestyle & Hospitality Branding",
+        "Content and campaigns for restaurants, venues and experience brands."
+      ],
+      [
+        "Social & Community Content",
+        "Platform-ready content that grows an engaged audience."
+      ],
+      [
+        "Cultural Events & Activations",
+        "Concept support, coordination and storytelling around live moments."
       ]
     ],
-    "service": "content-and-creative"
+    "service": "content-and-creative",
+    "workflow": [
+      [
+        "Understand the craft",
+        "We learn what you make, why, and for whom."
+      ],
+      [
+        "Find the voice",
+        "We shape a point of view that is unmistakably yours."
+      ],
+      [
+        "Build the body of work",
+        "Series, campaigns and assets that connect."
+      ],
+      [
+        "Grow the audience",
+        "Consistent publishing that turns attention into community."
+      ]
+    ],
+    "selectedWork": [
+      {
+        "client": "Falz",
+        "work": "LinkedIn content strategy",
+        "images": [
+          {
+            "src": "/images/events/falz/moment-6.webp",
+            "alt": "Falz performing at the Community Hangout",
+            "fit": "cover"
+          }
+        ],
+        "href": "",
+        "permissionConfirmed": true
+      },
+      {
+        "client": "Omotoni Dada",
+        "work": "Gallery pitch content briefs",
+        "images": [],
+        "href": "",
+        "permissionConfirmed": true
+      },
+      {
+        "client": "Kitchen 86 & Maison 86",
+        "work": "Lifestyle and hospitality brand content",
+        "images": [
+          {
+            "src": "/images/clients/kitchen86.jpg",
+            "alt": "Kitchen 86 logo",
+            "fit": "contain"
+          },
+          {
+            "src": "/images/clients/maison86.jpeg",
+            "alt": "Maison 86 logo",
+            "fit": "contain"
+          }
+        ],
+        "href": "",
+        "permissionConfirmed": true
+      }
+    ]
   }
 ];
 
