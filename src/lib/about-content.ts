@@ -5,7 +5,7 @@ export const sectorDetails = [
     "title": "Impact & Development",
     "line": "Stories that move purpose into action.",
     "intro": "Foundations, nonprofits, CSR teams and advocacy groups do work that matters. We make sure the people who need to hear about it actually do.",
-    "body": "Good intentions don’t speak for themselves. Impact organisations often have the work, the results and the people, but not the narrative that earns trust, funding and partnership. At EBA, we treat your mission the way a good editor treats a story: find the human centre, shape it with clarity, and put it in front of the right audience at the right moment.",
+    "body": "Foundations, nonprofits, advocacy platforms and purpose-led organisations need more than visibility. They need a clear story about the change they are working towards, the communities involved and the value of their work.",
     "image": "/images/sector-impact.png",
     "focus": [
       [
@@ -86,7 +86,7 @@ export const sectorDetails = [
     "title": "Media & Entertainment",
     "line": "Visibility where culture and conversation happen.",
     "intro": "Talent, platforms and entertainment brands live and die by attention. We build the presence, the press and the moments that keep you in the conversation.",
-    "body": "Culture moves fast, and attention is quick to be lost. But whether you’re a performer, a media company or a platform, your image is part of your product. EBA helps media and entertainment clients shape that image deliberately, with sharp positioning, strong storytelling and campaigns that land where audiences already are.",
+    "body": "We work with talent, media platforms and entertainment brands to connect a strong identity with the right audience. Positioning, storytelling and considered amplification help a platform stand for something beyond the next announcement.",
     "image": "/images/sector-media.png",
     "focus": [
       [
