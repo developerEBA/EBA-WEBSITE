@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { sectorVisuals, type SectorSlug } from "@/lib/sector-visuals";
+import { homeSectorVisuals as sectorVisuals, type SectorSlug } from "@/lib/sector-visuals";
 import { ShopInvitation } from "@/components/shop/shop-invitation";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { ActionLink } from "@/components/shared/action-link";

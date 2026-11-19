@@ -3,10 +3,11 @@ import Link from "next/link";
 import { ArrowDown, ArrowRight, ArrowUpRight } from "lucide-react";
 import { ActionLink } from "@/components/shared/action-link";
 import { Entrance } from "@/components/shared/motion";
+import { playWithStephenPhotos } from "@/lib/play-with-stephen-photos";
 import { PwsImpactCounter } from "@/components/pws-impact-counter";
 
 const photo = (n: number) => `/images/events/swing-for-autism/moment-${n}.${n === 5 || n === 6 ? "jpg" : "webp"}`;
-const suppliedTournamentPhoto = "/images/events/swing-for-autism/pws-friday-0089.jpg";
+const suppliedTournamentPhoto = playWithStephenPhotos[0].src;
 
 const impact = [
   { value: 12, label: "months of planning" },
@@ -27,7 +28,7 @@ const initiatives = [
 export function PlayWithStephenCaseStudy() {
   return <main className="case-page pws-case-study">
     <section className="pws-hero">
-      <Image className="pws-hero-image" src={photo(6)} alt="Golfers taking part in Play With Stephen Swing for Autism" fill priority sizes="100vw"/>
+      <Image className="pws-hero-image" src={playWithStephenPhotos[7].src} alt={playWithStephenPhotos[7].alt} fill priority sizes="100vw"/>
       <div className="pws-hero-shade"/>
       <div className="section-shell pws-hero-content">
         <Entrance><Link className="pws-back" href="/case-studies"><ArrowRight size={14}/> All case studies</Link><span className="pws-eyebrow">PLAY WITH STEPHEN × OLSTON FOUNDATION</span><h1>From golf tournament<br/>to a <em>year-round</em><br/>autism campaign.</h1><p>12 months of strategy. Four connected initiatives. More than 120,000 impressions. One participant’s journey from beginner to champion.</p><div className="pws-hero-actions"><ActionLink href="#pws-results" variant="yellow" showArrow={false}>Explore the results <ArrowDown size={15}/></ActionLink><a href="#pws-story" className="pws-text-link">Read the story <ArrowRight size={15}/></a></div></Entrance>
@@ -41,7 +42,7 @@ export function PlayWithStephenCaseStudy() {
 
     <section className="pws-story section-shell" id="pws-story">
       <Entrance className="pws-story-copy"><span className="pws-eyebrow">THE OPPORTUNITY</span><h2>A tournament could<br/>start a bigger story.</h2><p>Play With Stephen already brought golfers together for an important cause. The opportunity was to build beyond tournament day: make golf more accessible, keep autism awareness visible, create value for partners and turn attention into participation.</p><p>EBA began planning 12 months ahead, connecting campaign strategy, public relations, digital marketing, content, partnerships and event production around one clear idea.</p><div className="pws-flow"><span>Educate</span><i/><span>Engage</span><i/><span>Participate</span><i/><span>Amplify</span></div></Entrance>
-      <Entrance direction="right" className="pws-story-visual"><Image src={photo(2)} alt="A golfer on the course during the Play With Stephen tournament" fill sizes="(max-width:760px) 90vw, 48vw"/><span>More than a date on the calendar.</span></Entrance>
+      <Entrance direction="right" className="pws-story-visual"><Image src={playWithStephenPhotos[4].src} alt={playWithStephenPhotos[4].alt} fill sizes="(max-width:760px) 90vw, 48vw"/><span>More than a date on the calendar.</span></Entrance>
     </section>
 
     <section className="pws-initiatives">
@@ -59,7 +60,7 @@ export function PlayWithStephenCaseStudy() {
       <div className="section-shell pws-partners-inner"><div><span className="pws-eyebrow">A COMMUNITY BEHIND THE CAUSE</span><h2>Partners made<br/>more possible.</h2><p>More than 20 brands and organisations supported the campaign, helping bring the tournament, content and awareness work to life.</p></div><div className="pws-partner-wall" aria-label="Campaign partners"><span>Indomie</span><span>The Singleton</span><span>GUINNESS</span><span>MTN</span><span>PEPSI</span><span>Aquafina</span><span>FORTRESS CAPITAL</span><span>DEVTRACO</span><small>Partner names supplied in the campaign brief</small></div></div>
     </section>
 
-    <section className="pws-gallery section-shell"><div><span className="pws-eyebrow">THE PEOPLE. THE GAME. THE PURPOSE.</span><h2>A campaign carried<br/><em>by its community.</em></h2></div><div className="pws-gallery-grid"><div className="pws-gallery-online-photo"><Image src={suppliedTournamentPhoto} alt="A Play With Stephen golfer lining up a putt on the course" fill sizes="(max-width:760px) 90vw, 35vw"/><span>ON THE GREEN · PLAY WITH STEPHEN</span></div><div><Image src="/images/events/swing-for-autism/awards-1.webp" alt="Globe trophies arranged for the Play With Stephen awards" fill sizes="(max-width:760px) 90vw, 35vw"/></div><div><Image src="/images/events/swing-for-autism/awards-2.webp" alt="A close view of the Play With Stephen trophies" fill sizes="(max-width:760px) 90vw, 35vw"/></div><div><Image src="/images/events/swing-for-autism/awards-3.webp" alt="An award recipient holding trophies and certificates at Play With Stephen" fill sizes="(max-width:760px) 90vw, 35vw"/></div></div></section>
+    <section className="pws-gallery section-shell"><div><span className="pws-eyebrow">THE PEOPLE. THE GAME. THE PURPOSE.</span><h2>A campaign carried<br/><em>by its community.</em></h2></div><div className="pws-gallery-grid"><div className="pws-gallery-online-photo"><Image src={suppliedTournamentPhoto} alt={playWithStephenPhotos[0].alt} fill sizes="(max-width:760px) 90vw, 35vw"/><span>ON THE GREEN · PLAY WITH STEPHEN</span></div><div><Image src="/images/events/swing-for-autism/awards-1.webp" alt="Globe trophies arranged for the Play With Stephen awards" fill sizes="(max-width:760px) 90vw, 35vw"/></div><div><Image src="/images/events/swing-for-autism/awards-2.webp" alt="A close view of the Play With Stephen trophies" fill sizes="(max-width:760px) 90vw, 35vw"/></div><div><Image src="/images/events/swing-for-autism/awards-3.webp" alt="An award recipient holding trophies and certificates at Play With Stephen" fill sizes="(max-width:760px) 90vw, 35vw"/></div></div></section>
 
     <section className="pws-closing"><div className="section-shell pws-closing-inner"><span className="pws-eyebrow">THE EBA DIFFERENCE</span><h2>We didn’t simply publicise a golf tournament.</h2><p>We connected autism education, participation, partnerships and event production in a year-round campaign built to make progress visible.</p><ActionLink href="/consultation?service=experiences-and-activations" variant="yellow" showArrow={false}>Build a campaign with EBA <ArrowUpRight size={16}/></ActionLink></div></section>
   </main>;

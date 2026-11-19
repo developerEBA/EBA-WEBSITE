@@ -36,7 +36,7 @@ export function MediaEntertainment() {
             </div></div>
           </div>
           <figure className="impact-hero-photo">
-            <div><Image src="/images/events/falz/moment-6.webp" alt="Falz performing among guests at the Community Hangout" fill preload sizes="(max-width: 700px) 90vw, 45vw"/></div>
+            <div><Image src="/images/events/falz/moment-2.webp" alt="Guests arriving at the Falz Community Hangout" fill preload sizes="(max-width: 700px) 90vw, 45vw"/></div>
             <figcaption><span>In the room. In the conversation.</span><span>Falz Community Hangout <ArrowUpRight size={14} aria-hidden="true"/></span></figcaption>
           </figure>
         </div>
@@ -60,7 +60,7 @@ export function MediaEntertainment() {
       <div className="impact-section-heading"><div><span className="impact-eyebrow">04 — Selected Work</span><h2 id="media-work-title">Culture, in<br/><em>the spotlight.</em></h2></div><span className="impact-section-aside">On stage. In the press.<br/>Part of the conversation.</span></div>
       <div className="impact-work-grid media-work-grid">
         <article><div className="impact-work-photo"><Image src="/images/case-studies/bovi-lagos.jpg" alt="Bovi beside Guilty As Charged branding in the Lagos show gallery" fill sizes="(max-width: 700px) 90vw, 45vw"/></div><div className="impact-work-meta"><span>PR / Press conference</span><span>Lagos show imagery</span></div><h3>Bovi: “Guilty As Charged”</h3><p>Press conference</p><Link className="media-work-link" href="/case-studies/bovi-guilty-as-charged">Explore the work <ArrowUpRight size={14} aria-hidden="true"/></Link></article>
-        <article><div className="impact-work-photo"><Image src="/images/events/falz/moment-6.webp" alt="Falz The Bhad Guy performing at the Community Hangout" fill sizes="(max-width: 700px) 90vw, 45vw"/></div><div className="impact-work-meta"><span>Music / Community</span><span>Live experience</span></div><h3>Falz The Bhad Guy</h3><p>Community Hangout</p><Link className="media-work-link" href="/events/falz-community-hangout">Explore the experience <ArrowUpRight size={14} aria-hidden="true"/></Link></article>
+        <article><div className="impact-work-photo"><Image src="/images/events/falz/moment-2.webp" alt="Guests arriving at the Falz Community Hangout" fill sizes="(max-width: 700px) 90vw, 45vw"/></div><div className="impact-work-meta"><span>Music / Community</span><span>Live experience</span></div><h3>Falz The Bhad Guy</h3><p>Community Hangout</p><Link className="media-work-link" href="/events/falz-community-hangout">Explore the experience <ArrowUpRight size={14} aria-hidden="true"/></Link></article>
         <article className="media-release-card"><div className="media-release-art"><span className="impact-eyebrow">Q4 / Press release campaign</span><div><span>Talentville</span><span aria-hidden="true">×</span><span>Loud Urban<br/><em>Choir.</em></span></div><span className="media-release-status">Forthcoming <ArrowUpRight size={22} aria-hidden="true"/></span></div><div className="impact-work-meta"><span>PR / Release campaign</span><span>Forthcoming</span></div><h3>Talentville &amp; Loud Urban Choir</h3><p>Q4 press release campaign</p></article>
       </div>
     </div></section>

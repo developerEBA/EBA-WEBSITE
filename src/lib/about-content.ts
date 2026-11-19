@@ -152,8 +152,8 @@ export const sectorDetails = [
         "work": "Community Hangout",
         "images": [
           {
-            "src": "/images/events/falz/moment-6.webp",
-            "alt": "Falz performing among guests at the Community Hangout",
+            "src": "/images/events/falz/moment-2.webp",
+            "alt": "Guests arriving at the Falz Community Hangout",
             "fit": "cover"
           }
         ],
@@ -301,8 +301,8 @@ export const sectorDetails = [
         "work": "LinkedIn content strategy",
         "images": [
           {
-            "src": "/images/events/falz/moment-6.webp",
-            "alt": "Falz performing at the Community Hangout",
+            "src": "/images/events/falz/moment-2.webp",
+            "alt": "Guests arriving at the Falz Community Hangout",
             "fit": "cover"
           }
         ],

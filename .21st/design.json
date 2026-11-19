@@ -334,7 +334,7 @@
     "must": [],
     "avoid": []
   },
-  "decisions": ["Red Room and event galleries use full-frame cover photography with automatic five-second crossfades, compact dots and pause controls; no scrolling thumbnail strip. The Events hero opens with a Red Room photo."],
+  "decisions": ["Red Room uses full-frame cover photography with automatic five-second crossfades. The Events From the room gallery automatically slides horizontally one picture at a time with a seamless forward loop. Both use compact dots and pause controls, with no scrolling thumbnail strip. The Events hero opens with a Red Room photo."],
   "evidence": [
     {
       "fact": "components.installed",

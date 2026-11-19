@@ -8,14 +8,25 @@ import "./red-room-carousel.css";
 
 type Photo = { src: string; alt: string; caption: string; position?: string };
 
-export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room, in pictures.", eyebrow = "Inside the experience", className = "journal-shell", label = "Red Room" }: { photos?: Photo[]; title?: string; eyebrow?: string; className?: string; label?: string }) {
+export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room, in pictures.", eyebrow = "Inside the experience", className = "journal-shell", label = "Red Room", effect = "fade" }: { photos?: Photo[]; title?: string; eyebrow?: string; className?: string; label?: string; effect?: "fade" | "slide" }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const [hovered, setHovered] = useState(false);
   const [focused, setFocused] = useState(false);
+  const [resetting, setResetting] = useState(false);
   const pointerStart = useRef<number | null>(null);
   const id = useId();
-  const photo = photos[active];
+  const current = active % photos.length;
+  const photo = photos[current];
+  const slides = effect === "slide" ? [...photos, photos[0]] : photos;
+  useEffect(() => {
+    if (!resetting) return;
+    let secondFrame = 0;
+    const firstFrame = requestAnimationFrame(() => {
+      secondFrame = requestAnimationFrame(() => setResetting(false));
+    });
+    return () => { cancelAnimationFrame(firstFrame); cancelAnimationFrame(secondFrame); };
+  }, [resetting]);
   useEffect(() => {
     const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
     let timer: ReturnType<typeof setInterval> | undefined;
@@ -23,18 +34,18 @@ export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room,
       clearInterval(timer);
       if (paused || hovered || focused || preference.matches || photos.length < 2) return;
       timer = setInterval(() => {
-        if (!document.hidden) setActive(index => (index + 1) % photos.length);
+        if (!document.hidden) setActive(index => effect === "slide" ? index % photos.length + 1 : (index + 1) % photos.length);
       }, 5000);
     }
     syncPlayback();
     preference.addEventListener("change", syncPlayback);
     return () => { clearInterval(timer); preference.removeEventListener("change", syncPlayback); };
-  }, [paused, hovered, focused, photos.length]);
+  }, [paused, hovered, focused, photos.length, effect]);
   function move(direction: number) {
-    setActive(index => (index + direction + photos.length) % photos.length);
+    setActive(index => effect === "slide" && direction === 1 ? index % photos.length + 1 : (index + direction + photos.length) % photos.length);
   }
 
-  return <section className={`red-room-carousel ${className}`} role="region" aria-roledescription="carousel" aria-labelledby={`${id}-title`}
+  return <section className={`red-room-carousel ${effect === "slide" ? "is-sliding" : ""} ${className}`} role="region" aria-roledescription="carousel" aria-labelledby={`${id}-title`}
     onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}
     onFocusCapture={() => setFocused(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false); }}
     onKeyDown={event => {
@@ -53,12 +64,17 @@ export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room,
           pointerStart.current = null;
           if (start !== null && Math.abs(start - event.clientX) > 45) move(start > event.clientX ? 1 : -1);
         }}>
-        {photos.map((item, index) => <div key={item.src} className={`red-room-gallery-slide${index === active ? " is-active" : ""}`} role="group" aria-roledescription="slide" aria-label={`${index + 1} of ${photos.length}`} aria-hidden={index !== active}>
-          <Image src={item.src} alt={item.alt} fill sizes="(max-width: 760px) 92vw, 1280px" style={{ objectFit: "cover", objectPosition: item.position || "center 38%" }} />
-        </div>)}
+        <div className={`red-room-gallery-track${resetting ? " is-resetting" : ""}`} style={effect === "slide" ? { transform: `translate3d(-${active * 100}%,0,0)` } : undefined} onTransitionEnd={event => {
+          if (event.target === event.currentTarget && effect === "slide" && active === photos.length) {
+            setResetting(true);
+            setActive(0);
+          }
+        }}>{slides.map((item, index) => <div key={`${item.src}-${index}`} className={`red-room-gallery-slide${index === current ? " is-active" : ""}`} role="group" aria-roledescription="slide" aria-label={`${index % photos.length + 1} of ${photos.length}`} aria-hidden={index !== current}>
+          <Image src={item.src} alt={item.alt} fill loading={index === current || index === (current + 1) % photos.length ? "eager" : "lazy"} sizes="(max-width: 760px) 92vw, 1280px" style={{ objectFit: "cover", objectPosition: item.position || "center 38%" }} />
+        </div>)}</div>
       </div>
-      <figcaption aria-live={paused || focused ? "polite" : "off"} aria-atomic="true"><span>{photo.caption}</span><span>{active + 1} / {photos.length}</span></figcaption>
+      <figcaption aria-live={paused || focused ? "polite" : "off"} aria-atomic="true"><span>{photo.caption}</span><span>{current + 1} / {photos.length}</span></figcaption>
     </figure>
-    <div className="red-room-gallery-playback"><div className="red-room-gallery-dots" role="group" aria-label={`Choose a ${label} photo`}>{photos.map((item, index) => <button type="button" key={item.src} aria-label={`Show ${label} photo ${index + 1}`} aria-pressed={index === active} aria-controls={`${id}-slide`} onClick={() => setActive(index)}><span /></button>)}</div><button type="button" className="red-room-gallery-pause" aria-pressed={paused} onClick={() => setPaused(value => !value)}>{paused ? "Play slideshow" : "Pause slideshow"}</button></div>
+    <div className="red-room-gallery-playback"><div className="red-room-gallery-dots" role="group" aria-label={`Choose a ${label} photo`}>{photos.map((item, index) => <button type="button" key={item.src} aria-label={`Show ${label} photo ${index + 1}`} aria-pressed={index === current} aria-controls={`${id}-slide`} onClick={() => setActive(index)}><span /></button>)}</div><button type="button" className="red-room-gallery-pause" aria-pressed={paused} onClick={() => setPaused(value => !value)}>{paused ? "Play slideshow" : "Pause slideshow"}</button></div>
   </section>;
 }

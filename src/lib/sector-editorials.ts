@@ -49,7 +49,7 @@ export const sectorEditorials: SectorEditorial[] = [
     steps: [["Position", "Define what makes you worth watching."], ["Package", "Build the assets: press kit, scripts, visuals, content calendar."], ["Launch", "Roll out across press, social and live moments."], ["Sustain", "Keep the momentum going after the spotlight moves."]],
     work: [
       { title: "Bovi: “Guilty As Charged”", description: "Press conference", category: "PR & press", image: "/images/case-studies/bovi-lagos.jpg", alt: "Bovi in the Lagos show gallery, rather than press-conference coverage", href: "/case-studies/bovi-guilty-as-charged" },
-      { title: "Falz The Bhad Guy", description: "Community Hangout", category: "Music & community", image: "/images/events/falz/moment-6.webp", alt: "Falz performing at the Community Hangout", href: "/events/falz-community-hangout" },
+      { title: "Falz The Bhad Guy", description: "Community Hangout", category: "Music & community", image: "/images/events/falz/moment-2.webp", alt: "Guests arriving at the Falz Community Hangout", href: "/events/falz-community-hangout" },
       { title: "Talentville & Loud Urban Choir", description: "Q4 press release campaign", category: "Release campaign", forthcoming: true },
     ],
   },

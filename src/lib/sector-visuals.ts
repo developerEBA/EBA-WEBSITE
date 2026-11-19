@@ -34,4 +34,12 @@ export const sectorVisuals = {
   },
 } as const;
 
+// Homepage collection photography can change independently of sector detail pages.
+export const homeSectorVisuals = {
+  ...sectorVisuals,
+  "impact-and-development": { ...sectorVisuals["impact-and-development"], hero: "/images/impact/community-volunteer.jpg", heroAlt: "Volunteers collecting litter as part of a community environmental initiative; illustrative sector photography", position: "50% 20%" },
+  "corporate-and-professional": { ...sectorVisuals["corporate-and-professional"], hero: "/images/events/lounge/eba-team.webp", heroAlt: "EBA team members wearing branded T-shirts at The Red Room", position: "50% 25%" },
+  "culture-and-creative-industries": { ...sectorVisuals["culture-and-creative-industries"], hero: "/images/events/lounge/conversation.webp", heroAlt: "Guests exchanging ideas at a Lounge Network gathering", position: "50% 55%" },
+};
+
 export type SectorSlug = keyof typeof sectorVisuals;

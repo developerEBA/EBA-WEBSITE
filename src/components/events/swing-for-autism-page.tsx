@@ -5,17 +5,10 @@ import { ActionLink } from "@/components/shared/action-link";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Entrance } from "@/components/shared/motion";
 import { PageNewsletter } from "@/components/about-shared";
+import { playWithStephenPhotos } from "@/lib/play-with-stephen-photos";
 import type { EventStory } from "@/lib/event-content";
 
-const moments = [
-  "Golfers sharing a moment on the course at Play With Stephen",
-  "A golfer in the Play With Stephen tournament colours",
-  "Guests connecting at the tournament welcome area",
-  "The tournament community gathered on the green",
-  "A player enjoying a moment during the golf tournament",
-  "Golfers walking the course together",
-  "The Swing for Autism community posing together at the event",
-];
+const moments = playWithStephenPhotos;
 
 export function SwingForAutismPage({ event }: { event: EventStory }) {
   return <main className="events-page swing-event-page">
@@ -28,7 +21,7 @@ export function SwingForAutismPage({ event }: { event: EventStory }) {
     </div></section>
     <section className="swing-facts event-container" aria-label="Event information"><div><CalendarDays size={20}/><span>DATE<strong>August 21–23, 2026</strong></span></div><div><Clock3 size={20}/><span>TIME<strong>From 8:00 AM</strong></span></div><div><MapPin size={20}/><span>VENUE<strong>Lakowe Lakes &amp; Country Estate, Lagos</strong></span></div></section>
     <section className="swing-story event-container"><Entrance><SectionHeading eyebrow="THE EVENT">Swinging for<br/>something bigger.</SectionHeading></Entrance><Entrance direction="right"><p>Play With Stephen – Swing For Autism returned for its seventh edition in Lagos, bringing the tournament’s community together around golf and a shared commitment to autism awareness.</p><p>The 2026 edition was hosted at Lakowe Lakes &amp; Country Estate, creating a memorable setting for sport, connection and purpose.</p></Entrance></section>
-    <section className="swing-gallery event-container" aria-labelledby="swing-gallery-title"><div className="swing-gallery-heading"><Entrance><span className="event-eyebrow">EVENT MOMENTS</span><h2 id="swing-gallery-title">On the green.</h2></Entrance><Entrance direction="right"><p>A look at the people, energy and moments that define the Play With Stephen experience.</p></Entrance></div><div className="swing-gallery-grid">{moments.map((alt, index) => <Entrance key={alt} className={`swing-moment swing-moment-${index + 1}`} delay={(index % 3) * .08}><Image src={`/images/events/swing-for-autism/moment-${index + 1}.jpg`} alt={alt} fill sizes={index === 6 ? "(max-width: 700px) 90vw, 85vw" : "(max-width: 700px) 90vw, 45vw"} style={{ objectFit: "cover" }}/></Entrance>)}</div></section>
+    <section className="swing-gallery event-container" aria-labelledby="swing-gallery-title"><div className="swing-gallery-heading"><Entrance><span className="event-eyebrow">EVENT MOMENTS</span><h2 id="swing-gallery-title">On the green.</h2></Entrance><Entrance direction="right"><p>A look at the people, energy and moments that define the Play With Stephen experience.</p></Entrance></div><div className="swing-gallery-grid">{moments.map((photo, index) => <Entrance key={photo.src} className={`swing-moment swing-moment-${index + 1}`} delay={(index % 3) * .08}><Image src={photo.src} alt={photo.alt} fill sizes={index >= 6 ? "(max-width: 700px) 90vw, 85vw" : "(max-width: 700px) 90vw, 45vw"} style={{ objectFit: "cover", objectPosition: photo.position }}/></Entrance>)}</div></section>
     <PageNewsletter/>
   </main>;
 }

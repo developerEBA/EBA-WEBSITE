@@ -11,7 +11,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "play-with-stephen", title: "Play With Stephen", category: "EVENT", tags: ["Event"],
-    image: "/images/events/swing-for-autism/moment-6.jpg", alt: "Play With Stephen golfers on the course",
+    image: "/images/events/play-with-stephen/indoor-swing.webp", alt: "A Play With Stephen participant practising a golf swing",
     line: "From golf tournament to a year-round campaign for autism education, participation and community.",
     description: "Play With Stephen brings golf, community and autism awareness together. EBA supported the initiative through positioning, communications, campaign execution and its digital presence.",
     approach: "The focus: the event experience. Connect the reason for gathering with the invitation, the story and the audience engagement, keeping autism awareness at the centre.",
@@ -43,7 +43,7 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     slug: "falz-community-hangout", title: "Falz Community Hangout", category: "EVENT", tags: ["Event"],
-    image: "/images/events/falz/moment-6.webp", alt: "Falz performing with a microphone among guests at the Community Hangout",
+    image: "/images/events/falz/moment-2.webp", alt: "Guests arriving at the Falz Community Hangout",
     line: "Bringing music, culture and community into the same room.",
     description: "The Owambe edition of Falz Community Hangout brought the community together in Lagos. The experience connected live performance, shared moments and the energy of the Bahd Gang community.",
     approach: "The focus: the event experience. Bring the community’s identity into the gathering, creating space for connection and capturing the moments that carry its story beyond the room.",
