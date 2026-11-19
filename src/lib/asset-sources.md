@@ -4,6 +4,22 @@ Country outlines are derived from https://github.com/johan/world.geo.json/blob/m
 
 # Image assets
 
+## The Red Room / NAC 2026
+
+Seven photographs supplied by the user on November 19, 2026 are resized without cropping (maximum 1920px) and saved as WebP in `public/images/red-room/`:
+
+| Supplied file | Website asset |
+| --- | --- |
+| IMG_0182.JPG | welcome.webp |
+| IMG_9733.jpg | guests.webp |
+| IMG_9725.jpg | chill-zone.webp |
+| IMG_0151.JPG | production.webp |
+| IMG_0270.JPG | conversations.webp |
+| IMG_0651.JPG | panel.webp |
+| IMG_0655.JPG | audience.webp |
+
+The shared journal entry displays these as a carousel for stories mentioning Red Room, Redroom or Red-Room. Photos fill the display frame using cover crops and crossfade automatically. All seven also appear in the Events “From the room / The moments in between” slideshow; the Events hero opens with the Red Room welcome photograph. Captions distinguish the Red Room lounge from the wider NAC stage and audience. Originals on the Desktop are unchanged.
+
 ## Impact & Development
 
 - `public/images/impact/community-volunteers.jpg`: Julia M Cameron, Pexels, https://www.pexels.com/photo/young-men-and-women-having-fun-while-volunteering-with-sorting-clothing-6995090/

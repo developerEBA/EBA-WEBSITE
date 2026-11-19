@@ -1,8 +1,12 @@
+import { redRoomPhotos } from "@/lib/red-room";
+
 export const eventHeroPhotos = [
+  { ...redRoomPhotos[0], position: "center 42%" },
   { src: "/images/events/falz/moment-6.webp", alt: "Falz performing with guests at the Community Hangout", position: "center 40%", caption: "Falz Community Hangout. Live in the moment." },
   { src: "/images/events/swing-for-autism/moment-2.webp", alt: "Golfers coming together at the Swing for Autism tournament", position: "center 38%", caption: "Play With Stephen. Sport with purpose." },
   { src: "/images/events/lasting-moments.webp", alt: "Two guests smiling beside the communiTEE event backdrop", position: "center 40%", caption: "communiTEEbyeba. Shared moments." },
   { src: "/images/events/falz/moment-4.webp", alt: "Guests celebrating at the Falz Community Hangout", position: "center 30%", caption: "Culture, connection and good company." },
+  ...redRoomPhotos.slice(1).map(photo => ({ ...photo, position: photo.position || "center 38%" })),
 ];
 
 export type EventStory = {

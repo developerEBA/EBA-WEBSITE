@@ -23,3 +23,8 @@ Nine additional releases were verified against their publishers and added with s
 Every House Remembers uses the publisher’s 12 November 2026 publication date rather than the tracker’s 16 November. Ann Obaseki’s NAC report is dated 16 November and appears first. PUNCH’s finale metadata is 30 October at 23:09 UTC, equivalent to its displayed publication date of 31 October in Nigeria. Vanguard’s choir-identity and LAIF dates likewise follow their displayed Nigerian dates. No EBA authorship role is assigned to the three tracker rows where that field was empty.
 
 The nine new covers use their respective article’s `og:image`; filenames: bovi-behind-punchlines, bovi-world-tour-finale, lagos-golfers-swagc, bovi-comedy-therapy, loud-choir-making, loud-choir-identity, laif-creative-industry, every-house-remembers, ann-obaseki-nac (all WebP under public/images/stories).
+## Original article — 19 November 2026
+
+`original-articles.json` contains Damian Okonkwo’s supplied NAC 2026 opinion article, titled “Repositioning the Marketing Communications Industry for the Next Frontier.” The title is drawn from the conference theme in the copy. All supplied body text is preserved; the byline becomes author metadata and the three bullet points become list blocks. The article is dated 19 November 2026, the date it was added, and uses the user-supplied `IMG_0651.JPG` panel photograph already optimized at `/images/red-room/panel.webp`.
+
+Article route: `/stories/articles/repositioning-marketing-communications-for-the-next-frontier`. It appears in Articles & Insights and the journal’s latest-article feature, separately from the Ann Obaseki Red Room press release.

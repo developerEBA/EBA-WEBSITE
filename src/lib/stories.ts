@@ -2,6 +2,7 @@ import mediaCoverage from "@/lib/stories/media-coverage.json";
 import importedPosts from "@/lib/stories/posts.json";
 import editorialUpdates from "@/lib/stories/editorial-updates.json";
 import newsroomAdditions from "@/lib/stories/newsroom-additions.json";
+import originalArticles from "@/lib/stories/original-articles.json";
 import { contentTypeFromCategory, type JournalContentType } from "@/lib/story-format";
 export type StorySegment = { type: string; text: string; href?: string };
 export type StoryBlock = { type: string; segments: StorySegment[] };
@@ -10,7 +11,7 @@ export type ArticleStory = StoryBase & { contentType: "article"; author?: string
 export type PressReleaseStory = StoryBase & { contentType: "press-release"; organisation?: string; mediaContact?: string };
 export type Story = ArticleStory | PressReleaseStory;
 export type StorySummary = Omit<StoryBase, "blocks"> & { contentType: JournalContentType };
-export const stories: Story[] = [...importedPosts, ...mediaCoverage, ...newsroomAdditions].map(original => {
+export const stories: Story[] = [...importedPosts, ...mediaCoverage, ...newsroomAdditions, ...originalArticles].map(original => {
   const story = { ...original, ...editorialUpdates.find(update => update.id === original.id) };
   const contentType = contentTypeFromCategory(story.category);
   if (!contentType) throw new Error(`Unreviewed story category: ${story.category}`);

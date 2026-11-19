@@ -6,6 +6,8 @@ import { storyDate, storyHeadingId, storyTypeLabel } from "@/lib/story-format";
 import { StoryBody } from "./story-body";
 import { StoryCard } from "./story-card";
 import { ReadingProgress, ShareStory } from "./article-interactions";
+import { RedRoomCarousel } from "./red-room-carousel";
+import { isRedRoomStory } from "@/lib/red-room";
 
 export function JournalEntry({ story }: { story: Story }) {
   const press = story.contentType === "press-release";
@@ -23,7 +25,7 @@ export function JournalEntry({ story }: { story: Story }) {
         <h1>{story.title}</h1>
         {press ? <div className="press-publication-line"><span>{story.organisation || "Published in the EBA newsroom"}</span><ShareStory label={press ? "Copy release link" : "Copy article link"} /></div> : <div className="journal-byline"><span className="journal-author-mark" aria-hidden="true">{story.mediaCoverage ? <ArrowUpRight size={23}/> : <>eba<span>.</span></>}</span><div><strong>{story.mediaCoverage ? story.originalAuthor || story.publication : story.author || "Eni Brand Architect"}</strong><span>{story.publication || "Articles & Insights"}</span></div><ShareStory label={press ? "Copy release link" : "Copy article link"} /></div>}
       </header>
-      {story.image && <div className="journal-article-cover journal-shell"><Image src={story.image} alt={story.imageAlt} fill preload sizes="90vw" style={{ objectFit: "contain" }} /></div>}
+      {isRedRoomStory(story) ? <RedRoomCarousel /> : story.image && <div className="journal-article-cover journal-shell"><Image src={story.image} alt={story.imageAlt} fill preload sizes="90vw" style={{ objectFit: "contain" }} /></div>}
       <div className="journal-reading-layout journal-shell"><aside className="journal-reading-aside">{headings.length > 0 && <details className="journal-contents"><summary>{press ? "In this release" : "In this article"}</summary><nav aria-label="Article contents">{headings.map(({ block, index }) => <a href={`#${storyHeadingId(index)}`} key={index}>{block.segments.map(segment => segment.text).join("")}</a>)}</nav></details>}</aside><div className="journal-prose">{publicationUrl && <aside className="journal-coverage-source"><span className="journal-eyebrow">Published by {story.publication}</span>{story.mediaCoverage && <p>A summary of the published report.</p>}{story.client && <p>Client: {story.client}{story.ebaRole && <> · EBA’s role: {story.ebaRole}</>}</p>}<a href={publicationUrl} target="_blank" rel="noopener noreferrer">Read the original on {story.publication} <ArrowUpRight size={17}/></a></aside>}<StoryBody blocks={story.blocks} />
         {press && <aside className="press-contact"><span className="journal-eyebrow">{story.mediaContact ? "Media contact" : "Enquiries about this release"}</span>{story.mediaContact ? <p>{story.mediaContact}</p> : <p>Contact Eni Brand Architect at <a href="mailto:hello@enibrand.com">hello@enibrand.com</a>.</p>}</aside>}
         <footer className="journal-article-end"><ShareStory label={press ? "Copy release link" : "Copy article link"} /><Link href={channel}>{press ? "Back to Press Releases" : "Back to Articles & Insights"} <ArrowUpRight size={16} /></Link></footer>
