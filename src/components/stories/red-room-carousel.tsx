@@ -8,7 +8,7 @@ import "./red-room-carousel.css";
 
 type Photo = { src: string; alt: string; caption: string; position?: string };
 
-export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room, in pictures.", eyebrow = "Inside the experience", className = "journal-shell", label = "Red Room", effect = "fade" }: { photos?: Photo[]; title?: string; eyebrow?: string; className?: string; label?: string; effect?: "fade" | "slide" }) {
+export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room, in pictures.", eyebrow = "Inside the experience", className = "journal-shell", label = "Red Room", effect = "fade", interval = 5000, imageFit = "cover" }: { photos?: Photo[]; title?: string; eyebrow?: string; className?: string; label?: string; effect?: "fade" | "slide"; interval?: number; imageFit?: "cover" | "contain" }) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const [hovered, setHovered] = useState(false);
@@ -35,12 +35,12 @@ export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room,
       if (paused || hovered || focused || preference.matches || photos.length < 2) return;
       timer = setInterval(() => {
         if (!document.hidden) setActive(index => effect === "slide" ? index % photos.length + 1 : (index + 1) % photos.length);
-      }, 5000);
+      }, interval);
     }
     syncPlayback();
     preference.addEventListener("change", syncPlayback);
     return () => { clearInterval(timer); preference.removeEventListener("change", syncPlayback); };
-  }, [paused, hovered, focused, photos.length, effect]);
+  }, [paused, hovered, focused, photos.length, effect, interval]);
   function move(direction: number) {
     setActive(index => effect === "slide" && direction === 1 ? index % photos.length + 1 : (index + direction + photos.length) % photos.length);
   }
@@ -70,7 +70,7 @@ export function RedRoomCarousel({ photos = redRoomPhotos, title = "The Red Room,
             setActive(0);
           }
         }}>{slides.map((item, index) => <div key={`${item.src}-${index}`} className={`red-room-gallery-slide${index === current ? " is-active" : ""}`} role="group" aria-roledescription="slide" aria-label={`${index % photos.length + 1} of ${photos.length}`} aria-hidden={index !== current}>
-          <Image src={item.src} alt={item.alt} fill loading={index === current || index === (current + 1) % photos.length ? "eager" : "lazy"} sizes="(max-width: 760px) 92vw, 1280px" style={{ objectFit: "cover", objectPosition: item.position || "center 38%" }} />
+          <Image src={item.src} alt={item.alt} fill loading={index === current || index === (current + 1) % photos.length ? "eager" : "lazy"} sizes="(max-width: 760px) 92vw, 1280px" style={{ objectFit: imageFit, objectPosition: imageFit === "contain" ? "center" : item.position || "center 38%" }} />
         </div>)}</div>
       </div>
       <figcaption aria-live={paused || focused ? "polite" : "off"} aria-atomic="true"><span>{photo.caption}</span><span>{current + 1} / {photos.length}</span></figcaption>

@@ -9,7 +9,31 @@ export const eventHeroPhotos = [
   ...redRoomPhotos.slice(1).map(photo => ({ ...photo, position: photo.position || "center 38%" })),
 ];
 
-export const eventGalleryPhotos = [...loungePhotos, ebaTeamPhoto, ...playWithStephenPhotos, ...eventHeroPhotos.filter(photo => !playWithStephenPhotos.some(item => item.src === photo.src))];
+// Mix events, portraits, action and room details rather than grouping by source.
+export const eventGalleryPhotos = [
+  loungePhotos[0],
+  playWithStephenPhotos[0],
+  redRoomPhotos[0],
+  ebaTeamPhoto,
+  playWithStephenPhotos[7],
+  loungePhotos[2],
+  redRoomPhotos[2],
+  playWithStephenPhotos[4],
+  loungePhotos[1],
+  eventHeroPhotos[2],
+  redRoomPhotos[3],
+  playWithStephenPhotos[1],
+  redRoomPhotos[1],
+  loungePhotos[4],
+  playWithStephenPhotos[6],
+  redRoomPhotos[5],
+  playWithStephenPhotos[2],
+  loungePhotos[3],
+  redRoomPhotos[6],
+  playWithStephenPhotos[3],
+  redRoomPhotos[4],
+  playWithStephenPhotos[5],
+];
 
 export type EventStory = {
   id: string;

@@ -23,5 +23,8 @@
 .red-room-gallery-dots button[aria-pressed=true] span { background: var(--eba-green,#073f30); transform: scale(1.4); }
 .red-room-gallery-pause { min-height: 44px; padding: 8px 14px; border: 1px solid #073f3050; border-radius: 999px; background: transparent; color: inherit; font-size: 12px; cursor: pointer; }
 .experience-gallery .red-room-carousel { margin-block: 0; }
+.compact-event-gallery { max-width: 960px; }
+.compact-event-gallery .red-room-gallery-stage { height: clamp(240px,30vw,380px); background: var(--eba-cream,#f7f3e8); }
+.compact-event-gallery.is-sliding .red-room-gallery-track { transition-duration: .55s; }
 @media(prefers-reduced-motion:reduce) { .red-room-gallery-slide,.is-sliding .red-room-gallery-track { transition: none; } }
 @media(max-width:600px) { .red-room-carousel { margin-block: 24px 35px; }.red-room-gallery-heading { align-items: center; gap: 12px; }.red-room-gallery-heading h2 { font-size: 27px; }.red-room-gallery-controls { gap: 6px; }.red-room-gallery-controls button { width: 44px; height: 44px; } }
