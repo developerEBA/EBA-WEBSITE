@@ -5,6 +5,26 @@
 @media(max-width:1000px){.experience-hero{min-height:560px;padding:40px}.experience-hero-caption{left:40px}.experience-intro{gap:6%}.experience-feature-copy{padding:30px}.experience-card-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:35px 25px}.experience-collection-heading{align-items:flex-start;flex-direction:column;gap:25px}.experience-search{width:360px}.experience-invitation{padding:40px}.experience-hero h1{font-size:86px}}
 @media(max-width:760px){.experience-opening{padding-top:115px}.experience-opening-header{font-size:9px;margin-bottom:18px}.experience-opening-header>a{font-size:10px;gap:7px}.experience-hero{min-height:560px;padding:28px;border-radius:12px}.experience-hero h1{font-size:clamp(64px,11vw,83px)}.experience-hero-copy{padding-bottom:70px}.experience-hero p{font-size:13px;max-width:34ch}.experience-hero-shade{background:linear-gradient(0deg,color-mix(in srgb,var(--eba-green) 93%,transparent),color-mix(in srgb,var(--eba-green) 20%,transparent) 90%)}.experience-hero-controls{right:22px;bottom:22px}.experience-hero-caption{display:none}.experience-hero-link{font-size:12px}.experience-intro{padding-block:45px;grid-template-columns:1fr;gap:23px}.experience-intro h2{font-size:34px}.experience-intro p{max-width:none;font-size:14px}.experience-feature{grid-template-columns:1fr;border-radius:12px}.experience-feature-photo{min-height:300px}.experience-feature-copy{padding:30px 25px}.experience-feature-copy h2{font-size:39px}.experience-feature-copy p{max-width:48ch}.experience-collection{padding-block:50px}.experience-collection-heading h2{font-size:35px}.experience-collection-heading{gap:24px;margin-bottom:24px}.experience-search{width:100%}.experience-filters{gap:3px}.experience-filters button{padding:9px 11px;font-size:10px}.experience-card h3{font-size:25px}.experience-gallery{padding-block:42px}.experience-gallery-heading h2{font-size:33px}.experience-gallery-controls{gap:7px}.experience-gallery-controls button{width:34px;height:34px}.experience-gallery-heading{align-items:center}.experience-gallery-frame{flex-basis:75%;min-width:240px}.experience-invitation{margin-block:45px;padding:32px 28px;align-items:flex-start;flex-direction:column;gap:28px}.experience-invitation h2{font-size:36px}.experience-invitation p br{display:none}.experience-archive-heading{padding-top:120px}.experience-archive-heading h1{font-size:59px}.experience-archive-heading>p{font-size:14px}}
 @media(max-width:540px){.experience-card-grid{grid-template-columns:1fr;gap:32px}.experience-card h3{font-size:30px}.experience-card-picture{aspect-ratio:1.3}.experience-hero h1{font-size:64px}.experience-hero{min-height:535px}.experience-feature-photo{min-height:270px}.experience-gallery-heading h2{font-size:29px}.experience-gallery-controls{flex-shrink:0}.experience-opening-header>span{letter-spacing:.1em}.experience-opening-header>a{font-size:9px}}
+
+/* Reduce vertical bulk while preserving the editorial layout and gallery. */
+.experience-hero { min-height:520px; }
+.experience-hero-copy { padding-bottom:24px; }
+.experience-intro { padding-block:58px; }
+.experience-feature,.experience-feature-photo { min-height:380px; }
+.experience-feature-copy { padding:32px 36px; }
+.experience-gallery { padding-block:44px; }
+.experience-gallery-heading { margin-bottom:22px; }
+.experience-invitation { margin-block:48px 58px;padding:38px 42px; }
+@media(max-width:760px) {
+ .experience-opening { padding-top:100px; }
+ .experience-hero { min-height:490px; }
+ .experience-intro { padding-block:36px; }
+ .experience-feature-photo { min-height:270px; }
+ .experience-feature-copy { padding:26px 22px; }
+ .experience-gallery { padding-block:34px; }
+ .experience-invitation { margin-block:34px;padding:26px 22px;gap:20px; }
+}
+@media(max-width:540px) { .experience-hero { min-height:465px; } }
 @media(prefers-reduced-motion:reduce){.events-refresh *{animation:none!important;transition:none!important;scroll-behavior:auto!important}.experience-card:hover img,.experience-hero-link:hover svg{transform:none}}
 
 /* Keep the hero description readable over every slideshow image. */

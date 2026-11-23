@@ -403,6 +403,34 @@ p { line-height:1.6; }
 .about-chevron { flex-shrink:0;transition:transform .16s ease; }
 .about-chevron.is-open { transform:rotate(180deg); }
 .about-dropdown { top:calc(100% + 13px);left:0;width:250px;padding:12px 0;border-radius:18px;background:#faf8f2;box-shadow:0 12px 28px #073f3024; }
+
+/* Keep the main landing page focused without oversized gaps or a very tall hero. */
+.hero { min-height:640px;height:clamp(640px,49vw,740px); }
+.hero-content { padding-top:160px;padding-bottom:32px; }
+.hero-content > p { margin-top:15px; }
+.hero-buttons { margin-top:20px; }
+.stats { margin-top:26px; }
+.about { gap:42px;padding-block:68px 52px; }
+.services { padding-block:60px; }
+.services-grid { gap:70px; }
+.service-row { padding-block:17px 19px; }
+.sectors { padding-block:68px 36px; }
+.section-intro { margin-bottom:42px; }
+.sector-panel { padding:25px;border-radius:22px; }
+.sector-grid { gap:16px;margin-top:20px; }
+@media(max-width:1100px) { .hero { min-height:620px;height:auto; }.hero-content { padding-top:150px; } }
+@media(max-width:760px) {
+ .hero { min-height:630px; }
+ .hero-content { padding:145px 22px 36px; }
+ .stats { margin-top:26px; }
+ .about { padding-block:42px; }
+ .services { padding-block:42px; }
+ .services-grid { gap:30px; }
+ .sectors { padding-block:42px 26px; }
+ .section-intro { gap:18px;margin-bottom:26px; }
+ .sector-panel { padding:17px;border-radius:16px; }
+ .sector-grid { gap:12px;margin-top:16px; }
+}
 .about-dropdown a,.about-dropdown > button { white-space:nowrap;font-size:16px;line-height:24px;padding:13px 28px; }
 .nav > a,.about-menu > button,.about-dropdown a,.about-dropdown > button { transition:color .18s ease; }
 .nav > a[aria-current="page"],.about-menu > button.current-page { color:#987b16; }
